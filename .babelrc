@@ -1,0 +1,9 @@
+{
+    "presets": [
+            ["@babel/preset-env", { "modules": false }]
+    ],
+    "comments": false,
+    "plugins": [
+        [ "@babel/plugin-transform-template-literals", { "loose": true } ]  
+      ]
+}

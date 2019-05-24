@@ -1,0 +1,33 @@
+{
+  "name": "scss-boilerplate",
+  "version": "1.0.0",
+  "description": "Starter pack using SCSS",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Neil Dewing",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-template-literals": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.4.4",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-minify-template-strings": "^1.0.3",
+    "babel-polyfill": "^6.26.0",
+    "css-mqpacker": "^7.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "newline-remove": "^1.0.2"
+  }
+}
