@@ -7,6 +7,12 @@ $mq-laptop: "only screen and (min-width: 1250px) and (max-height: 850px)";
 
 
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//  Colours
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$lightGrey: #F7F7F7;
+
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,8 +42,6 @@ $breakpoints: (
 
 
 
-
-
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //  Utils
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,4 +65,233 @@ $breakpoints: (
 
 .u-c {
     display: block;
+}
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//  1. Hero
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.hmlp-hero {
+    background: black;
+    padding: 50px 30px;
+    text-align: center;
+
+    &__content {
+
+    }
+
+    &__title,
+    &__body {
+        color: #fff;
+        margin: 0;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    &__body {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+}
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//  Quick Nav
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.hmlp-nav-wrap {
+
+}
+
+.hmlp-nav {
+    font-size: 0;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+    &__item {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 1;
+        margin: 0;
+        padding: 0 10px;
+        position: relative;
+    }
+
+    &__item:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 10px;
+        opacity: .5;
+        position: absolute;
+        right: 0;
+        top: 18px;
+        width: 1px;
+    }
+
+    &__item:last-child {
+        padding-right: 0;
+    }
+
+    &__item:last-child:after {
+        display: none;
+    }
+
+    &__link {
+        color: #333;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+}
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//  Product Block
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.hmlp-block {
+    background: $lightGrey;
+    padding: 24px;
+
+    &__logo {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0 0 15px;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 1;
+        margin: 0 0 16px;
+    }
+
+}
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//  Product Images
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.hmlp-product-img-wrap {
+    margin: 0 -24px 24px;
+}
+
+.hmlp-product-img {
+    display: block;
+    height: auto;
+    width: 100%;
+
+    &--mobile {
+        
+    }
+
+}
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//  CTAs
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.hmlp-quick-add {
+    background: #106847;
+    border-radius: 24px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 auto;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 215px;
+}
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//  Talking About
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.hmlp-talking-about {
+    margin: 0 0 16px 16px;
+    padding: 0;
+
+    &__item {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0 0 8px;
+        padding: 0;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//  Sample Banner
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.hmlp-sample-banner {
+    background: black;
+    padding: 50px 0;
+    text-align: center;
+
+    &__body {
+        color: #fff;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 29px;
+        margin: 0 auto 15px;
+        width: 250px;
+    }
+
+    &__cta {
+        background: #EC803A;
+        border: 1px solid #D26823;
+        box-shadow: 1px 2px 3px 0 rgba(0,0,0,0.25);
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 11px;
+        text-decoration: none;
+        width: 215px;
+    }
+
 }
