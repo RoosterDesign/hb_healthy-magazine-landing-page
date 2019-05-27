@@ -4,12 +4,13 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" id="viewport" content="initial-scale=1, width=device-width"/> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="dist/css/reset.css">
         <link rel="stylesheet" type="text/css" href="dist/css/styles.css">
     </head>
     <body>
         <div class="main">
-                <div class="global-banners">  <div class="">  <a href="/shop/offers/up-to-half-price-on-selected-items/?icmp=Global_GBL_1_P10_1_uthp" data-responsive-href="{&quot;desktop&quot;:&quot;/shop/offers/up-to-half-price-on-selected-items/?icmp=Global_GBL_1_P10_1_uthp&quot;,&quot;mobile&quot;:&quot;/shop/offers/up-to-half-price-on-selected-items/?icmp=Global_GBL_1_P10_1_uthp_mob&quot;}"> <picture> <source media="(min-width: 768px)" data-srcset="https://images.hollandandbarrettimages.co.uk/promotionuploads_new/hb/atg/p_1819/p10/globals/uthp-desktop-global.png" srcset="https://images.hollandandbarrettimages.co.uk/promotionuploads_new/hb/atg/p_1819/p10/globals/uthp-desktop-global.png"> <source media="(max-width: 767px)" data-srcset="https://images.hollandandbarrettimages.co.uk/promotionuploads_new/hb/atg/p_1819/p10/globals/uthp-mob-global.png" srcset="https://images.hollandandbarrettimages.co.uk/promotionuploads_new/hb/atg/p_1819/p10/globals/uthp-mob-global.png"> <img data-src="https://images.hollandandbarrettimages.co.uk/promotionuploads_new/hb/atg/p_1819/p10/globals/uthp-desktop-global.png" class=" lazyloaded" style="" alt="" data-height-fallback="{&quot;desktop&quot;:&quot;&quot;,&quot;mobile&quot;:&quot;&quot;}" data-width-fallback="{&quot;desktop&quot;:&quot;100%&quot;,&quot;mobile&quot;:&quot;100%&quot;}" src="https://images.hollandandbarrettimages.co.uk/promotionuploads_new/hb/atg/p_1819/p10/globals/uthp-desktop-global.png"> </picture> </a>  </div>  </div>
+                <div class="global-banners"><img data-src="https://images.hollandandbarrettimages.co.uk/promotionuploads_new/hb/atg/p_1819/p10/globals/uthp-desktop-global.png" class=" lazyloaded" style="" alt="" data-height-fallback="{&quot;desktop&quot;:&quot;&quot;,&quot;mobile&quot;:&quot;&quot;}" data-width-fallback="{&quot;desktop&quot;:&quot;100%&quot;,&quot;mobile&quot;:&quot;100%&quot;}" src="https://images.hollandandbarrettimages.co.uk/promotionuploads_new/hb/atg/p_1819/p10/globals/uthp-desktop-global.png"></div>
 
 
 
@@ -29,10 +30,10 @@
             <div class="hmlp-nav-wrap">
                 <ul class="hmlp-nav">
                     <li class="hmlp-nav__item">
-                        <a href="#" class="hmlp-nav__link">Healthy</a>
+                        <a href="#healthy" class="hmlp-nav__link js-hmlp-scrollto">Healthy</a>
                     </li>
                     <li class="hmlp-nav__item">
-                        <a href="#" class="hmlp-nav__link">Healthy For Men</a>
+                        <a href="#healthy-for-men" class="hmlp-nav__link js-hmlp-scrollto">Healthy For Men</a>
                     </li>
                 </ul>
             </div>
@@ -41,28 +42,41 @@
 
 
             <!-- 3. HEALTHY BLOCK -->
-            <div class="hmlp-block">
-                
-                <img src="https://via.placeholder.com/162x58" class="hmlp-block__logo">
-                
-                <p>“Hailed as the big trend of 2019, we’ve done a deep dive into zero waste beauty. It’s all about minimising the waste from your beauty products – starting with excessive packaging.</p>
-                <p>Join in by going ‘naked’ (ie completely unpackaged) by making a return to bar soap, one old-fashioned product that’s fast becoming the coolest thing to have in your bathroom. (Page 40)”.</p>
+            <div class="hmlp-block" id="healthy">
 
-                <div class="hmlp-product-img-wrap">                
-                    <img src="https://via.placeholder.com/375x200" class="hmlp-product-img hmlp-product-img--mobile">
+                <div class="hmlp-block__intro">                
+                    <img src="/dist/images/hmlp-healthy-logo.png" class="hmlp-block__logo">                    
+                    <p>“Hailed as the big trend of 2019, we’ve done a deep dive into zero waste beauty. It’s all about minimising the waste from your beauty products – starting with excessive packaging.</p>
+                    <p>Join in by going ‘naked’ (ie completely unpackaged) by making a return to bar soap, one old-fashioned product that’s fast becoming the coolest thing to have in your bathroom. (Page 40)”.</p>
                 </div>
 
-                <h3 class="hmlp-block__subtitle">We’re also talking about…</h3>
+                <div class="hmlp-block-editor">
+                    <div id="hmlp-photo-ellie-hughes" class="hmlp-block-editor__photo"></div>
+                    <p><strong>Ellie Hughes</strong> <br>Editorial Director, <em>Healthy</em></p>
+                </div>
 
-                <ul class="hmlp-talking-about">
-                    <li class="hmlp-talking-about__item">Your holiday health to-do list</li>
-                    <li class="hmlp-talking-about__item">Everything you need to know about evening primrose oil</li>
-                    <li class="hmlp-talking-about__item">How to be vegan on a budget</li>
-                    <li class="hmlp-talking-about__item">Your full guide to SPF </li>
-                    <li class="hmlp-talking-about__item">The best veg you need to be eating – Seaweed</li>
-                </ul>
+                <div class="hmlp-block-product">
+                    <img src="/dist/images/hmlp-healthy-cover.jpg" class="hmlp-block-product__cover">
+                        <a href="#" class="hmlp-quick-add">Quick Add</a>
+                </div>
+                
+                <div class="hmlp-product-img-wrap">                
+                    <img src="/dist/images/hmlp-healthy-prod.jpg" class="hmlp-product-img hmlp-product-img--mobile">
+                </div>
 
-                <a href="#" class="hmlp-quick-add">Quick Add</a>
+                <div class="hmlp-talking-about">
+                    <h3 class="hmlp-block__subtitle">We’re also talking about…</h3>
+                    <ul class="hmlp-talking-about-list">
+                        <li class="hmlp-talking-about-list__item">Your holiday health to-do list</li>
+                        <li class="hmlp-talking-about-list__item">Everything you need to know about evening primrose oil</li>
+                        <li class="hmlp-talking-about-list__item">How to be vegan on a budget</li>
+                        <li class="hmlp-talking-about-list__item">Your full guide to SPF </li>
+                        <li class="hmlp-talking-about-list__item">The best veg you need to be eating – Seaweed</li>
+                    </ul>
+                    
+                </div>
+
+                <a href="#" class="hmlp-quick-add hmlp-quick-add--mobile">Quick Add</a>
 
             </div>
             <!-- end: 3. HEALTHY BLOCK -->
@@ -70,37 +84,54 @@
 
 
             <!-- 4. HEALTHY SAMPLE BANNER -->
-            <div class="hmlp-sample-banner">
-                <p class="hmlp-sample-banner__body">Read your FREE sample of Healthy here</p>
-                <a href="#" class="hmlp-sample-banner__cta">Free Sample</a>
+            <div class="hmlp-sample-banner" id="hmlp-healthy-banner">
+                <div class="hmlp-sample-banner__body">
+                    <p>Read your FREE sample of Healthy here</p>
+                    <a href="#" class="hmlp-sample-banner__cta">Free Sample</a>
+                </div>
             </div>
             <!-- end: 4. HEALTHY SAMPLE BANNER -->
 
 
 
             <!-- 5. HEALTHY FOR MEN BLOCK -->
-            <div class="hmlp-block">
-                
-                    <img src="https://via.placeholder.com/162x58" class="hmlp-block__logo">
-                    
-                    <p>“Say hello to our everyday superstar Chris Hemsworth. Hemsworth blesses us with his fitness knowledge on how to build bigger biceps and how he looks after his health in three simple chunks; food, sleep and working out.</p>
-                    <p>Explore how yoga can help boost physical and mental performance. We also discover how ‘clean’ eating may be doing more bad than good and how to move for better sex, tonight!”</p>
+            <div class="hmlp-block" id="healthy-for-men">
+
+                    <div class="hmlp-block__intro">                
+                        <img src="/dist/images/hmlp-healthy-men-logo.png" class="hmlp-block__logo">                
+                        <p>“Say hello to our everyday superstar Chris Hemsworth. Hemsworth blesses us with his fitness knowledge on how to build bigger biceps and how he looks after his health in three simple chunks; food, sleep and working out.</p>
+                        <p>Explore how yoga can help boost physical and mental performance. We also discover how ‘clean’ eating may be doing more bad than good and how to move for better sex, tonight!”</p>
+                    </div>
+
+                    <div class="hmlp-block-editor">
+                        <div id="hmlp-photo-tom-rowley" class="hmlp-block-editor__photo"></div>
+                        <p><strong>Tom Rowley</strong><br> Editor, <em>Healthy For Men</em></p>
+                    </div>
+
+                    <div class="hmlp-block-product">
+                        <img src="/dist/images/hmlp-healthy-men-cover.jpg" class="hmlp-block-product__cover">
+                            <a href="#" class="hmlp-quick-add">Quick Add</a>
+                    </div>                    
     
                     <div class="hmlp-product-img-wrap">                
-                        <img src="https://via.placeholder.com/375x200" class="hmlp-product-img hmlp-product-img--mobile">
+                        <img src="dist/images/hmlp-healthy-men-prod.jpg" class="hmlp-product-img hmlp-product-img--mobile">
                     </div>
     
-                    <h3 class="hmlp-block__subtitle">We’re also talking about…</h3>
+                    <div class="hmlp-talking-about">
+
+                        <h3 class="hmlp-block__subtitle">We’re also talking about…</h3>
     
-                    <ul class="hmlp-talking-about">
-                        <li class="hmlp-talking-about__item">Your holiday health to-do list</li>
-                        <li class="hmlp-talking-about__item">Everything you need to know about evening primrose oil</li>
-                        <li class="hmlp-talking-about__item">How to be vegan on a budget</li>
-                        <li class="hmlp-talking-about__item">Your full guide to SPF </li>
-                        <li class="hmlp-talking-about__item">The best veg you need to be eating – Seaweed</li>
-                    </ul>
-    
-                    <a href="#" class="hmlp-quick-add">Quick Add</a>
+                        <ul class="hmlp-talking-about-list">
+                                <li class="hmlp-talking-about-list__item">Why you need to be drinking more salt water</li>
+                            <li class="hmlp-talking-about-list__item">What’s so super about superfoods?</li>
+                            <li class="hmlp-talking-about-list__item">Why feeling and looking good may boost self-esteem this summer</li>
+                            <li class="hmlp-talking-about-list__item">How to build bigger muscles in your arms</li>
+                            <li class="hmlp-talking-about-list__item">Why more calories, doesn’t mean more muscles</li>
+                        </ul>
+                        
+                    </div>
+
+                    <a href="#" class="hmlp-quick-add hmlp-quick-add--mobile">Quick Add</a>
     
                 </div>
                 <!-- end: 5. HEALTHY FOR MEN BLOCK -->
@@ -108,15 +139,29 @@
     
     
                 <!-- 6. HEALTHY FOR MEN SAMPLE BANNER -->
-                <div class="hmlp-sample-banner">
-                    <p class="hmlp-sample-banner__body">Read your FREE sample of Healthy For Men here</p>
-                    <a href="#" class="hmlp-sample-banner__cta">Free Sample</a>
+                <div class="hmlp-sample-banner hmlp-sample-banner--alt u-c" id="hmlp-healthy-for-men-banner">
+                    <div class="hmlp-sample-banner__body">
+                        <p>Read your FREE sample of Healthy For Men here</p>
+                        <a href="#" class="hmlp-sample-banner__cta">Free Sample</a>
+                    </div>
                 </div>
                 <!-- end: 6. HEALTHY FOR MEN SAMPLE BANNER -->
 
 
+
+                <!-- 7. TWITTER BANNER -->
+                <a href="#" target="_blank" class="hmlp-twitter-banner">
+                    <p class="hmlp-twitter-banner__body">Let us know what you think about the new look magazines by tweeting <span class="hmlp-twitter-banner__twitter-account">@holland_barrett </span></p>
+                    <i class="fab fa-twitter hmlp-twitter-banner__twitter-logo"></i>
+                </a>
+                <!-- end: 7. TWITTER BANNER -->
+
+
         </div>
 
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <script src="dist/js/scripts.js"></script>
     
     </body>

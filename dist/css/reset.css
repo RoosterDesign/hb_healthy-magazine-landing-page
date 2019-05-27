@@ -8,6 +8,13 @@ html {
   line-height: 1.35;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +25,7 @@ body {
 
 .main {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1180px;
 }
 
 .global-banners img {
