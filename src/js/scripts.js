@@ -50,11 +50,33 @@
     };
 
 
+
+    //== Free Sample Modal
+
+    function freeSampleModal() {
+
+        // Open modal
+        $('.js-hmlp-sample-modal').click(function(e) {
+            e.preventDefault();
+            $(this).parents('.hmlp-sample-banner').children('.hmlp-modal-wrap').fadeIn(200);
+        });
+
+        // Close modal
+        $('.js-hmlp-modal-close').click(function(e) {
+            e.preventDefault();
+            $(this).parents('.hmlp-modal-wrap').fadeOut(200);
+        });
+
+    }
+
+
+
     //== Init all functions
 
     function init() {
         stickyNav();
         quickNavScroll();
+        freeSampleModal();
     };
 
 

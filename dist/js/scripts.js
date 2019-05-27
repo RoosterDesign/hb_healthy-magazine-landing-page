@@ -26,9 +26,20 @@
             console.info(offset);
         });
     }
+    function freeSampleModal() {
+        $(".js-hmlp-sample-modal").click(function(e) {
+            e.preventDefault();
+            $(this).parents(".hmlp-sample-banner").children(".hmlp-modal-wrap").fadeIn(200);
+        });
+        $(".js-hmlp-modal-close").click(function(e) {
+            e.preventDefault();
+            $(this).parents(".hmlp-modal-wrap").fadeOut(200);
+        });
+    }
     function init() {
         stickyNav();
         quickNavScroll();
+        freeSampleModal();
     }
     $(document).ready(function() {
         init();

@@ -273,6 +273,63 @@
   background-image: url("/dist/images/hmlp-healthy-men-banner-mobile.jpg");
 }
 
+.hmlp-modal-wrap {
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  height: 100%;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+}
+
+.hmlp-modal {
+  background: #fff;
+  padding: 30px;
+  position: relative;
+  height: 350px;
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.hmlp-modal__close {
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  font-size: 24px;
+  padding-top: 5px;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: -webkit-box-shadow .3s ease-in-out;
+  transition: -webkit-box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+  right: -10px;
+  top: -10px;
+  width: 40px;
+}
+
+.hmlp-modal__close:hover {
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hmlp-modal > div {
+  height: 100% !important;
+  width: 100% !important;
+}
+
 .hmlp-twitter-banner {
   background: #1DA1F2;
   display: block;
@@ -484,6 +541,17 @@
   #hmlp-healthy-for-men-banner {
     background-image: url("/dist/images/hmlp-healthy-men-banner.jpg");
   }
+  .hmlp-modal-wrap {
+    padding: 50px;
+  }
+  .hmlp-modal {
+    height: 100%;
+    max-width: none;
+  }
+  .hmlp-modal__close {
+    right: -15px;
+    top: -15px;
+  }
   .hmlp-twitter-banner {
     margin-top: 20px;
   }
@@ -563,9 +631,20 @@ $1
             console.info(offset);
         });
     }
+    function freeSampleModal() {
+        $(".js-hmlp-sample-modal").click(function(e) {
+            e.preventDefault();
+            $(this).parents(".hmlp-sample-banner").children(".hmlp-modal-wrap").fadeIn(200);
+        });
+        $(".js-hmlp-modal-close").click(function(e) {
+            e.preventDefault();
+            $(this).parents(".hmlp-modal-wrap").fadeOut(200);
+        });
+    }
     function init() {
         stickyNav();
         quickNavScroll();
+        freeSampleModal();
     }
     $(document).ready(function() {
         init();
