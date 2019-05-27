@@ -166,13 +166,36 @@
   width: 100%;
 }
 
+@-webkit-keyframes quick-order-loading {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes quick-order-loading {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 .hmlp-quick-add {
   background: #106847;
-  border-radius: 24px;
+  border-radius: 25px;
   color: #fff;
   display: none;
   font-size: 16px;
   font-weight: bold;
+  height: 50px;
   line-height: 1;
   margin: 0 auto;
   padding: 16px;
@@ -194,6 +217,20 @@
   box-shadow: none;
   position: relative;
   right: -1px;
+}
+
+.hmlp-quick-add--in-progress:before {
+  -webkit-animation: quick-order-loading 1500ms infinite linear;
+  animation: quick-order-loading 1500ms infinite linear;
+  border: 3px solid transparent;
+  border-left-color: #fff;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  top: 0;
+  width: 20px;
 }
 
 .hmlp-talking-about-list {
