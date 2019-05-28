@@ -19,8 +19,12 @@
   display: block;
 }
 
+body > div[role="main"] > div:nth-of-type(1) {
+  display: none;
+}
+
 .hmlp-hero {
-  background: url("/dist/images/hmlp-hero-mobile.jpg") 50% 50%;
+  background: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-hero-mobile.jpg") 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px 16px;
@@ -58,8 +62,6 @@
 
 .hmlp-nav__item {
   display: inline-block;
-  font-size: 16px;
-  line-height: 1;
   margin: 0;
   padding: 0 10px;
   position: relative;
@@ -88,10 +90,10 @@
 .hmlp-nav__link {
   color: #333;
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
-  padding: 15px;
-  text-decoration: none;
+  padding: 15px 10px;
+  text-decoration: none !important;
   text-transform: uppercase;
 }
 
@@ -138,11 +140,11 @@
 }
 
 #hmlp-photo-ellie-hughes {
-  background-image: url("/dist/images/hmlp-ellie-hughes-mobile.jpg");
+  background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-ellie-hughes-mobile.jpg");
 }
 
 #hmlp-photo-tom-rowley {
-  background-image: url("/dist/images/hmlp-tom-rowley-mobile.jpg");
+  background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-tom-rowley-mobile.jpg");
 }
 
 .hmlp-block-product {
@@ -204,6 +206,10 @@
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
   width: 215px;
+}
+
+.hmlp-quick-add--mobile {
+  display: block;
 }
 
 .hmlp-quick-add:hover {
@@ -302,11 +308,11 @@
 }
 
 #hmlp-healthy-banner {
-  background-image: url("/dist/images/hmlp-healthy-banner-mobile.jpg");
+  background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-banner-mobile.jpg");
 }
 
 #hmlp-healthy-for-men-banner {
-  background-image: url("/dist/images/hmlp-healthy-men-banner-mobile.jpg");
+  background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-men-banner-mobile.jpg");
 }
 
 .hmlp-modal-wrap {
@@ -369,6 +375,7 @@
 .hmlp-twitter-banner {
   background: #1DA1F2;
   display: block;
+  margin-top: 8px;
   position: relative;
   text-decoration: none !important;
 }
@@ -397,6 +404,13 @@
   top: 65px;
 }
 
+@media only screen and (min-width: 320px) {
+  .hmlp-nav__link {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
 @media (min-width: 375px) {
   .hmlp-twitter-banner__body {
     padding: 25px 30px;
@@ -416,7 +430,7 @@
 
 @media (min-width: 1250px) {
   .hmlp-hero {
-    background-image: url("/dist/images/hmlp-hero.jpg");
+    background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-hero.jpg");
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -482,7 +496,7 @@
   }
   .hmlp-block__intro:before {
     color: #dcdcdc;
-    content: '\201c';
+    content: "\\201C";
     display: block;
     font-size: 300px;
     left: -20px;
@@ -516,10 +530,10 @@
     width: 250px;
   }
   #hmlp-photo-ellie-hughes {
-    background-image: url("/dist/images/hmlp-ellie-hughes.jpg");
+    background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-ellie-hughes.jpg");
   }
   #hmlp-photo-tom-rowley {
-    background-image: url("/dist/images/hmlp-tom-rowley.jpg");
+    background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-tom-rowley.jpg");
   }
   .hmlp-block-product {
     border-left: 1px solid #EAEAEA;
@@ -572,10 +586,10 @@
     margin: 0;
   }
   #hmlp-healthy-banner {
-    background-image: url("/dist/images/hmlp-healthy-banner.jpg");
+    background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-banner.jpg");
   }
   #hmlp-healthy-for-men-banner {
-    background-image: url("/dist/images/hmlp-healthy-men-banner.jpg");
+    background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-men-banner.jpg");
   }
   .hmlp-modal-wrap {
     padding: 50px;

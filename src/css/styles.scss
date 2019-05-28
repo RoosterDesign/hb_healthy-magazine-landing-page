@@ -69,13 +69,17 @@ $breakpoints: (
 }
 
 
+body > div[role="main"] > div:nth-of-type(1) {
+    display: none;
+}
+
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //  1. Hero
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .hmlp-hero {
-    background: url('/dist/images/hmlp-hero-mobile.jpg') 50% 50%;
+    background: url('http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-hero-mobile.jpg') 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 16px;
@@ -84,7 +88,7 @@ $breakpoints: (
         padding: 48px 24px;
     }
     @include mq(desktop) {
-        background-image: url('/dist/images/hmlp-hero.jpg');
+        background-image: url('http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-hero.jpg');
         align-items: center;
         justify-content: flex-end;
         display: flex;
@@ -169,8 +173,6 @@ body.hmlp-sticky-nav--fixed {
 
     &__item {
         display: inline-block;
-        font-size: 16px;
-        line-height: 1;
         margin: 0;
         padding: 0 10px;
         position: relative;
@@ -207,11 +209,15 @@ body.hmlp-sticky-nav--fixed {
     &__link {
         color: #333;
         display: block;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: bold;
-        padding: 15px;
-        text-decoration: none;
+        padding: 15px 10px;
+        text-decoration: none !important;
         text-transform: uppercase;
+        @media only screen and (min-width: 320px) {
+            font-size: 14px;
+            padding: 15px;
+        }
         @include mq(desktop) {
             color: #fff;
             font-size: 18px;
@@ -256,7 +262,7 @@ body.hmlp-sticky-nav--fixed {
     &__intro:before {
         @include mq(desktop) {
             color: #dcdcdc;
-            content: '\201c';
+            content: "\\201C";
             display: block;
             font-size: 300px;
             left: -20px;
@@ -337,16 +343,16 @@ body.hmlp-sticky-nav--fixed {
 }    
 
 #hmlp-photo-ellie-hughes {
-    background-image: url('/dist/images/hmlp-ellie-hughes-mobile.jpg');
+    background-image: url('http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-ellie-hughes-mobile.jpg');
     @include mq(desktop) {
-        background-image: url('/dist/images/hmlp-ellie-hughes.jpg');
+        background-image: url('http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-ellie-hughes.jpg');
     }
 }
 
 #hmlp-photo-tom-rowley {
-    background-image: url('/dist/images/hmlp-tom-rowley-mobile.jpg');
+    background-image: url('http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-tom-rowley-mobile.jpg');
     @include mq(desktop) {
-        background-image: url('/dist/images/hmlp-tom-rowley.jpg');
+        background-image: url('http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-tom-rowley.jpg');
     }
 }
 
@@ -384,11 +390,6 @@ body.hmlp-sticky-nav--fixed {
     display: block;
     height: auto;
     width: 100%;
-
-    &--mobile {
-        
-    }
-
 }
 
 
@@ -426,6 +427,7 @@ body.hmlp-sticky-nav--fixed {
     }
 
     &--mobile {
+        display: block;
         @include mq(desktop) {
             display: none;
         }
@@ -575,16 +577,16 @@ body.hmlp-sticky-nav--fixed {
 }
 
 #hmlp-healthy-banner {
-    background-image: url('/dist/images/hmlp-healthy-banner-mobile.jpg');
+    background-image: url('http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-banner-mobile.jpg');
     @include mq(desktop) {
-        background-image: url('/dist/images/hmlp-healthy-banner.jpg');
+        background-image: url('http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-banner.jpg');
     }
 }
 
 #hmlp-healthy-for-men-banner {
-    background-image: url('/dist/images/hmlp-healthy-men-banner-mobile.jpg');
+    background-image: url('http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-men-banner-mobile.jpg');
     @include mq(desktop) {
-        background-image: url('/dist/images/hmlp-healthy-men-banner.jpg');
+        background-image: url('http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-men-banner.jpg');
     }
 }
 
@@ -664,6 +666,7 @@ body.hmlp-sticky-nav--fixed {
 .hmlp-twitter-banner {
     background: #1DA1F2;
     display: block;
+    margin-top: 8px;
     position: relative;
     text-decoration: none !important;
     @include mq(desktop) {
