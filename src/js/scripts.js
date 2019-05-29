@@ -115,8 +115,6 @@
 
         quickNavTop = $('.'+lpPrefix+'-nav-wrap').offset().top; 
 
-        console.info(quickNavTop);
-
         function doSticky() {
             currentScroll = $(window).scrollTop();
             if (currentScroll >= quickNavTop) {                    
@@ -139,7 +137,13 @@
             let anchor, offset;
 
             anchor = $(this).attr("href");
-            offset = $('.'+lpPrefix+'-nav-wrap').outerHeight() - 1;
+
+            if($(window).width() <= 768) {
+                // offset = $('.'+lpPrefix+'-nav-wrap').outerHeight() + 30;
+                offset = 100;
+            } else {
+                offset = $('.main-nav').outerHeight() + $('.js-main-header .branding').outerHeight() - 2;
+            }            
 
             $('html, body').stop().animate({
                 scrollTop: $(anchor).offset().top - offset
@@ -156,8 +160,8 @@
     function initHealthy() {
 
         const healthyContent = {
-            logo: 'http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-logo.png',
-            quote: `<p>\\\“Hailed as the big trend of 2019, we\\\’ve done a deep dive into zero waste beauty. It\\\’s all about minimising the waste from your beauty products – starting with excessive packaging.</p><p>Join in by going \\\‘naked\\\’ (ie completely unpackaged) by making a return to bar soap, one old-fashioned product that\\\’s fast becoming the coolest thing to have in your bathroom. (Page 40)\\\”.</p>`,
+            logo: '/__ssobj/static/hmlp-healthy-logo.png',
+            quote: `<p>Hailed as the big trend of 2019, we\\\’ve done a deep dive into zero waste beauty. It\\\’s all about minimising the waste from your beauty products – starting with excessive packaging.</p><p>Join in by going \\\‘naked\\\’ (ie completely unpackaged) by making a return to bar soap, one old-fashioned product that\\\’s fast becoming the coolest thing to have in your bathroom. (Page 40).</p>`,
             editor: {
                 id: 'ellie-hughes',
                 name: 'Ellie Hughes',
@@ -167,8 +171,8 @@
             product: {
                 sku: '010246',
                 prodId: '60010246',
-                coverImage: 'http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-cover.jpg',
-                mobileImage: 'http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-prod.jpg'
+                coverImage: '/__ssobj/static/hmlp-healthy-cover2.jpg',
+                mobileImage: '/__ssobj/static/hmlp-healthy-prod.jpg'
             },
             talkingAboutBullets: [
                 'Your holiday health to-do list',
@@ -178,7 +182,7 @@
                 'The best veg you need to be eating – Seaweed']
         };
 
-        let healthyHtml = `<div class="hmlp-block" id="healthy"><div class="hmlp-block__intro"><img src="${healthyContent.logo}" class="hmlp-block__logo">${healthyContent.quote}</div><div class="hmlp-block-editor"><div id="hmlp-photo-${healthyContent.editor.id}" class="hmlp-block-editor__photo"></div><p><strong>${healthyContent.editor.name}</strong> <br>${healthyContent.editor.role}, <em>${healthyContent.editor.magazine}</em></p></div><div class="hmlp-block-product"><img src="${healthyContent.product.coverImage}" class="hmlp-block-product__cover"><button class="hmlp-quick-add js-quickadd" data-sku="${healthyContent.product.sku}" data-product-id="${healthyContent.product.prodId}">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="${healthyContent.product.mobileImage}" class="hmlp-product-img hmlp-product-img--mobile"></div>`;
+        let healthyHtml = `<div class="hmlp-block" id="healthy"><div class="hmlp-block__intro"><img src="${healthyContent.logo}" class="hmlp-block__logo"><span class="hmlp-block__speech-mark"></span>${healthyContent.quote}</div><div class="hmlp-block-editor"><div id="hmlp-photo-${healthyContent.editor.id}" class="hmlp-block-editor__photo"></div><p><strong>${healthyContent.editor.name}</strong> <br>${healthyContent.editor.role}, <em>${healthyContent.editor.magazine}</em></p></div><div class="hmlp-block-product"><img src="${healthyContent.product.coverImage}" class="hmlp-block-product__cover"><button class="hmlp-quick-add js-quickadd" data-sku="${healthyContent.product.sku}" data-product-id="${healthyContent.product.prodId}">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="${healthyContent.product.mobileImage}" class="hmlp-product-img hmlp-product-img--mobile"></div>`;
 
         healthyHtml += `<div class="hmlp-talking-about"><h3 class="hmlp-block__subtitle">${talkingAboutTitle}</h3><ul class="hmlp-talking-about-list">`;
         healthyContent.talkingAboutBullets.forEach(el => healthyHtml += `<li class="hmlp-talking-about-list__item">${el}</li>`);
@@ -222,8 +226,8 @@
     function initHealthyMen() {
 
         const healthyMenContent = {
-            logo: 'http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-men-logo.png',
-            quote: `<p>\\\“Say hello to our everyday superstar Chris Hemsworth. Hemsworth blesses us with his fitness knowledge on how to build bigger biceps and how he looks after his health in three simple chunks; food, sleep and working out.</p><p>Explore how yoga can help boost physical and mental performance. We also discover how \\\‘clean\\\’ eating may be doing more bad than good and how to move for better sex, tonight!\\\”</p>`,
+            logo: '/__ssobj/static/hmlp-healthy-men-logo.png',
+            quote: `<p>Say hello to our everyday superstar Chris Hemsworth. Hemsworth blesses us with his fitness knowledge on how to build bigger biceps and how he looks after his health in three simple chunks; food, sleep and working out.</p><p>Explore how yoga can help boost physical and mental performance. We also discover how \\\‘clean\\\’ eating may be doing more bad than good and how to move for better sex, tonight!</p>`,
             editor: {
                 id: 'tom-rowley',
                 name: 'Tom Rowley',
@@ -233,8 +237,8 @@
             product: {
                 sku: '010311',
                 prodId: '60010311',
-                coverImage: 'http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-men-cover.jpg',
-                mobileImage: 'http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-men-prod.jpg'
+                coverImage: '/__ssobj/static/hmlp-healthy-men-cover2.jpg',
+                mobileImage: '/__ssobj/static/hmlp-healthy-men-prod.jpg'
             },
             talkingAboutBullets: [
                 'Why you need to be drinking more salt water',
@@ -245,7 +249,7 @@
             ]
         };
 
-        let healthyMenHtml = `<div class="hmlp-block" id="healthy-for-men"><div class="hmlp-block__intro"><img src="${healthyMenContent.logo}" class="hmlp-block__logo">${healthyMenContent.quote}</div><div class="hmlp-block-editor"><div id="hmlp-photo-${healthyMenContent.editor.id}" class="hmlp-block-editor__photo"></div><p><strong>${healthyMenContent.editor.name}</strong> <br>${healthyMenContent.editor.role}, <em>${healthyMenContent.editor.magazine}</em></p></div><div class="hmlp-block-product"><img src="${healthyMenContent.product.coverImage}" class="hmlp-block-product__cover"><button class="hmlp-quick-add js-quickadd" data-sku="${healthyMenContent.product.sku}" data-product-id="${healthyMenContent.product.prodId}">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="${healthyMenContent.product.mobileImage}" class="hmlp-product-img hmlp-product-img--mobile"></div>`;
+        let healthyMenHtml = `<div class="hmlp-block" id="healthy-for-men"><div class="hmlp-block__intro"><img src="${healthyMenContent.logo}" class="hmlp-block__logo"><span class="hmlp-block__speech-mark"></span>${healthyMenContent.quote}</div><div class="hmlp-block-editor"><div id="hmlp-photo-${healthyMenContent.editor.id}" class="hmlp-block-editor__photo"></div><p><strong>${healthyMenContent.editor.name}</strong> <br>${healthyMenContent.editor.role}, <em>${healthyMenContent.editor.magazine}</em></p></div><div class="hmlp-block-product"><img src="${healthyMenContent.product.coverImage}" class="hmlp-block-product__cover"><button class="hmlp-quick-add js-quickadd" data-sku="${healthyMenContent.product.sku}" data-product-id="${healthyMenContent.product.prodId}">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="${healthyMenContent.product.mobileImage}" class="hmlp-product-img hmlp-product-img--mobile"></div>`;
 
         healthyMenHtml += `<div class="hmlp-talking-about"><h3 class="hmlp-block__subtitle">${talkingAboutTitle}</h3><ul class="hmlp-talking-about-list">`;
         healthyMenContent.talkingAboutBullets.forEach(el => healthyMenHtml += `<li class="hmlp-talking-about-list__item">${el}</li>`);

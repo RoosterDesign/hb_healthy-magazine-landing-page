@@ -24,10 +24,16 @@ body > div[role="main"] > div:nth-of-type(1) {
   display: none;
 }
 
+.hmlp-hr {
+  margin: 70px 0;
+}
+
 .hmlp-hero {
-  background: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-hero-mobile.jpg") 50% 50%;
+  background: url("/__ssobj/static/hmlp-hero-mobile.jpg") 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: -8px;
+  margin-right: -8px;
   padding: 40px 16px;
   text-align: center;
 }
@@ -50,7 +56,8 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 .hmlp-nav-wrap {
-  background: #fff;
+  background: #3BA496;
+  margin: 0 -8px 30px;
 }
 
 .hmlp-nav {
@@ -69,7 +76,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 .hmlp-nav__item:after {
-  background: #333;
+  background: #fff;
   content: '';
   display: block;
   height: 10px;
@@ -89,25 +96,37 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 .hmlp-nav__link {
-  color: #333;
+  color: #fff;
   display: block;
   font-size: 13px;
+  height: 44px;
   font-weight: bold;
-  padding: 15px 10px;
+  padding: 14px 10px 0;
   text-decoration: none !important;
   text-transform: uppercase;
 }
 
-.hmlp-block {
-  background: #F7F7F7;
-  padding: 24px;
+.hmlp-block__speech-mark {
+  color: #dcdcdc;
+  float: left;
+  height: 40px;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.hmlp-block__speech-mark:before {
+  content: "\\201C";
+  font-size: 150px;
+  left: -6px;
+  position: relative;
+  top: -18px;
 }
 
 .hmlp-block__logo {
   display: block;
   height: auto;
-  margin-bottom: 10px;
-  max-width: 150px;
+  margin-bottom: 15px;
+  max-width: 175px;
   width: 100%;
 }
 
@@ -127,6 +146,10 @@ body > div[role="main"] > div:nth-of-type(1) {
   margin: 0 0 16px;
 }
 
+#healthy-for-men {
+  margin-top: 40px;
+}
+
 .hmlp-block-editor__photo {
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -141,11 +164,11 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 #hmlp-photo-ellie-hughes {
-  background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-ellie-hughes-mobile.jpg");
+  background-image: url("/__ssobj/static/hmlp-ellie-hughes-mobile.jpg");
 }
 
 #hmlp-photo-tom-rowley {
-  background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-tom-rowley-mobile.jpg");
+  background-image: url("/__ssobj/static/hmlp-tom-rowley-mobile.jpg");
 }
 
 .hmlp-block-product {
@@ -153,14 +176,17 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 .hmlp-block-product__cover {
+  border-radius: 1px;
+  -webkit-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
   display: block;
   height: auto;
-  margin: 0 auto 5px;
-  max-width: 206px;
+  margin: 0 auto 20px;
+  max-width: 150px;
 }
 
 .hmlp-product-img-wrap {
-  margin: 24px -24px;
+  margin: 24px -8px;
 }
 
 .hmlp-product-img {
@@ -265,6 +291,7 @@ body > div[role="main"] > div:nth-of-type(1) {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 24px -8px;
   padding: 50px 0;
   text-align: center;
 }
@@ -309,11 +336,11 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 #hmlp-healthy-banner {
-  background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-banner-mobile.jpg");
+  background-image: url("/__ssobj/static/hmlp-healthy-banner-mobile.jpg");
 }
 
 #hmlp-healthy-for-men-banner {
-  background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-men-banner-mobile.jpg");
+  background-image: url("/__ssobj/static/hmlp-healthy-men-banner-mobile.jpg");
 }
 
 .hmlp-modal-wrap {
@@ -376,7 +403,8 @@ body > div[role="main"] > div:nth-of-type(1) {
 .hmlp-twitter-banner {
   background: #1DA1F2;
   display: block;
-  margin-top: 8px;
+  margin: -16px -8px 0;
+  min-height: 120px;
   position: relative;
   text-decoration: none !important;
 }
@@ -386,7 +414,7 @@ body > div[role="main"] > div:nth-of-type(1) {
   font-size: 16px;
   line-height: 22px;
   margin: 0;
-  padding: 30px 20px;
+  padding: 15px 15px 40px;
   text-align: right;
 }
 
@@ -408,13 +436,14 @@ body > div[role="main"] > div:nth-of-type(1) {
 @media only screen and (min-width: 320px) {
   .hmlp-nav__link {
     font-size: 14px;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 @media (min-width: 375px) {
   .hmlp-twitter-banner__body {
-    padding: 25px 30px;
+    padding: 20px;
   }
   .hmlp-twitter-banner__twitter-logo {
     font-size: 160px;
@@ -423,15 +452,20 @@ body > div[role="main"] > div:nth-of-type(1) {
   }
 }
 
-@media (min-width: 768px) {
-  .hmlp-hero {
-    padding: 48px 24px;
+@media (min-width: 414px) {
+  .hmlp-twitter-banner__body {
+    padding-left: 50px;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 768px) {
   .hmlp-hero {
-    background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-hero.jpg");
+    margin-left: 0;
+    margin-right: 0;
+    padding: 48px 24px;
+  }
+  .hmlp-hero {
+    background-image: url("/__ssobj/static/hmlp-hero.jpg");
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -457,26 +491,22 @@ body > div[role="main"] > div:nth-of-type(1) {
     line-height: 28px;
   }
   .hmlp-nav-wrap {
-    background: #3BA496;
     height: 60px;
+    margin: 0 0 60px;
   }
   .hmlp-nav__item {
     padding: 0 1px;
   }
   .hmlp-nav__item:after {
-    background: #fff;
     height: 15px;
     top: 23px;
   }
   .hmlp-nav__link {
-    color: #fff;
     font-size: 18px;
-    padding: 22px 25px 20px;
+    height: 60px;
+    padding: 20px 25px 0;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-  }
-  .hmlp-nav__link:hover {
-    background: #349185;
   }
   .hmlp-block {
     display: -webkit-box;
@@ -484,81 +514,76 @@ body > div[role="main"] > div:nth-of-type(1) {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-top: 70px;
     padding: 0;
   }
   .hmlp-block__intro {
     -webkit-box-flex: 2;
     -ms-flex: 2;
     flex: 2;
-    min-width: 580px;
-    padding: 72px 40px 40px;
+    padding: 0 30px 30px 0;
     position: relative;
   }
-  .hmlp-block__intro:before {
-    color: #dcdcdc;
-    content: "\\201C";
-    display: block;
-    font-size: 300px;
-    left: -20px;
-    position: absolute;
-    top: -120px;
+  .hmlp-block__speech-mark {
+    height: 50px;
+    padding-right: 5px;
+  }
+  .hmlp-block__speech-mark:before {
+    font-size: 175px;
   }
   .hmlp-block__logo {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     max-width: 225px;
-  }
-  .hmlp-block p {
-    font-size: 18px;
-    line-height: 27px;
   }
   .hmlp-block__subtitle {
     font-size: 27px;
     line-height: 50px;
   }
+  #healthy-for-men {
+    margin-top: 60px;
+  }
   .hmlp-block-editor {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    min-width: 265px;
-    min-width: 300px;
-    padding: 40px 40px 40px 0;
+    padding: 0 30px 30px 0;
     text-align: center;
   }
   .hmlp-block-editor__photo {
-    height: 250px;
+    height: 0;
     margin: 0 auto 20px;
-    width: 250px;
+    padding-bottom: 100%;
+    width: 100%;
   }
   #hmlp-photo-ellie-hughes {
-    background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-ellie-hughes.jpg");
+    background-image: url("/__ssobj/static/hmlp-ellie-hughes.jpg");
   }
   #hmlp-photo-tom-rowley {
-    background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-tom-rowley.jpg");
+    background-image: url("/__ssobj/static/hmlp-tom-rowley.jpg");
   }
   .hmlp-block-product {
-    border-left: 1px solid #EAEAEA;
+    border-left: 1px solid #e3e8e8;
     display: inline-block;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 40px;
+    padding: 0 0 30px 30px;
   }
   .hmlp-product-img-wrap {
     display: none;
   }
   .hmlp-quick-add {
     display: block;
+    width: 200px;
   }
   .hmlp-quick-add--mobile {
     display: none;
   }
   .hmlp-talking-about {
-    border-top: 1px solid #EAEAEA;
+    border-top: 1px solid #e3e8e8;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 100%;
     flex: 1 1 100%;
-    padding: 24px 40px 40px;
+    padding: 24px 0 0;
   }
   .hmlp-talking-about-list {
     -webkit-column-count: 3;
@@ -570,7 +595,7 @@ body > div[role="main"] > div:nth-of-type(1) {
     padding-right: 56px;
   }
   .hmlp-sample-banner {
-    margin-top: 20px;
+    margin: 40px 0 0;
     padding: 60px 70px 40px 70px;
     text-align: left;
   }
@@ -587,10 +612,10 @@ body > div[role="main"] > div:nth-of-type(1) {
     margin: 0;
   }
   #hmlp-healthy-banner {
-    background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-banner.jpg");
+    background-image: url("/__ssobj/static/hmlp-healthy-banner.jpg");
   }
   #hmlp-healthy-for-men-banner {
-    background-image: url("http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-men-banner.jpg");
+    background-image: url("/__ssobj/static/hmlp-healthy-men-banner.jpg");
   }
   .hmlp-modal-wrap {
     padding: 50px;
@@ -604,7 +629,7 @@ body > div[role="main"] > div:nth-of-type(1) {
     top: -15px;
   }
   .hmlp-twitter-banner {
-    margin-top: 20px;
+    margin: 20px 0 0;
   }
   .hmlp-twitter-banner__body {
     font-size: 21px;
@@ -619,6 +644,42 @@ body > div[role="main"] > div:nth-of-type(1) {
     font-size: 300px;
     left: auto;
     right: 24px;
+    top: 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hmlp-block-editor {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  .hmlp-nav__link:hover {
+    background: #349185;
+  }
+  .hmlp-block__intro {
+    min-width: 680px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+  .hmlp-block__speech-mark {
+    height: 80px;
+  }
+  .hmlp-block__speech-mark:before {
+    font-size: 275px;
+    left: -10px;
+    top: -30px;
+  }
+  .hmlp-block-editor {
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+  .hmlp-block-product {
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
+  .hmlp-twitter-banner__twitter-logo {
     top: 0;
   }
 }
@@ -631,14 +692,12 @@ body > div[role="main"] > div:nth-of-type(1) {
     padding-top: 44px;
   }
   body.hmlp-sticky-nav--fixed .hmlp-nav-wrap {
+    margin: 0;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
   }
-}
-
-@media only screen and (max-width: 991px) {
   .hmlp-block-editor {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -725,7 +784,6 @@ $1
         stickyNavHtml += "</ul></div>";
         container.append(stickyNavHtml);
         quickNavTop = $("." + lpPrefix + "-nav-wrap").offset().top;
-        console.info(quickNavTop);
         function doSticky() {
             currentScroll = $(window).scrollTop();
             if (currentScroll >= quickNavTop) {
@@ -740,7 +798,11 @@ $1
             e.preventDefault();
             var anchor, offset;
             anchor = $(this).attr("href");
-            offset = $("." + lpPrefix + "-nav-wrap").outerHeight() - 1;
+            if ($(window).width() <= 768) {
+                offset = 100;
+            } else {
+                offset = $(".main-nav").outerHeight() + $(".js-main-header .branding").outerHeight() - 2;
+            }
             $("html, body").stop().animate({
                 scrollTop: $(anchor).offset().top - offset
             }, 1500, "easeInOutExpo");
@@ -748,8 +810,8 @@ $1
     }
     function initHealthy() {
         var healthyContent = {
-            logo: "http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-logo.png",
-            quote: "<p>\\“Hailed as the big trend of 2019, we\\’ve done a deep dive into zero waste beauty. It\\’s all about minimising the waste from your beauty products – starting with excessive packaging.</p><p>Join in by going \\‘naked\\’ (ie completely unpackaged) by making a return to bar soap, one old-fashioned product that\\’s fast becoming the coolest thing to have in your bathroom. (Page 40)\\”.</p>",
+            logo: "/__ssobj/static/hmlp-healthy-logo.png",
+            quote: "<p>Hailed as the big trend of 2019, we\\’ve done a deep dive into zero waste beauty. It\\’s all about minimising the waste from your beauty products – starting with excessive packaging.</p><p>Join in by going \\‘naked\\’ (ie completely unpackaged) by making a return to bar soap, one old-fashioned product that\\’s fast becoming the coolest thing to have in your bathroom. (Page 40).</p>",
             editor: {
                 id: "ellie-hughes",
                 name: "Ellie Hughes",
@@ -759,12 +821,12 @@ $1
             product: {
                 sku: "010246",
                 prodId: "60010246",
-                coverImage: "http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-cover.jpg",
-                mobileImage: "http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-prod.jpg"
+                coverImage: "/__ssobj/static/hmlp-healthy-cover2.jpg",
+                mobileImage: "/__ssobj/static/hmlp-healthy-prod.jpg"
             },
             talkingAboutBullets: [ "Your holiday health to-do list", "Everything you need to know about evening primrose oil", "How to be vegan on a budget", "Your full guide to SPF", "The best veg you need to be eating – Seaweed" ]
         };
-        var healthyHtml = '<div class="hmlp-block" id="healthy"><div class="hmlp-block__intro"><img src="' + healthyContent.logo + '" class="hmlp-block__logo">' + healthyContent.quote + '</div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-product"><img src="' + healthyContent.product.coverImage + '" class="hmlp-block-product__cover"><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile"></div>';
+        var healthyHtml = '<div class="hmlp-block" id="healthy"><div class="hmlp-block__intro"><img src="' + healthyContent.logo + '" class="hmlp-block__logo"><span class="hmlp-block__speech-mark"></span>' + healthyContent.quote + '</div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-product"><img src="' + healthyContent.product.coverImage + '" class="hmlp-block-product__cover"><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile"></div>';
         healthyHtml += '<div class="hmlp-talking-about"><h3 class="hmlp-block__subtitle">' + talkingAboutTitle + '</h3><ul class="hmlp-talking-about-list">';
         healthyContent.talkingAboutBullets.forEach(function(el) {
             return healthyHtml += '<li class="hmlp-talking-about-list__item">' + el + "</li>";
@@ -791,8 +853,8 @@ $1
     }
     function initHealthyMen() {
         var healthyMenContent = {
-            logo: "http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-men-logo.png",
-            quote: "<p>\\“Say hello to our everyday superstar Chris Hemsworth. Hemsworth blesses us with his fitness knowledge on how to build bigger biceps and how he looks after his health in three simple chunks; food, sleep and working out.</p><p>Explore how yoga can help boost physical and mental performance. We also discover how \\‘clean\\’ eating may be doing more bad than good and how to move for better sex, tonight!\\”</p>",
+            logo: "/__ssobj/static/hmlp-healthy-men-logo.png",
+            quote: "<p>Say hello to our everyday superstar Chris Hemsworth. Hemsworth blesses us with his fitness knowledge on how to build bigger biceps and how he looks after his health in three simple chunks; food, sleep and working out.</p><p>Explore how yoga can help boost physical and mental performance. We also discover how \\‘clean\\’ eating may be doing more bad than good and how to move for better sex, tonight!</p>",
             editor: {
                 id: "tom-rowley",
                 name: "Tom Rowley",
@@ -802,12 +864,12 @@ $1
             product: {
                 sku: "010311",
                 prodId: "60010311",
-                coverImage: "http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-men-cover.jpg",
-                mobileImage: "http://hb.rooster-dev.co.uk/healthy-magazine/hmlp-healthy-men-prod.jpg"
+                coverImage: "/__ssobj/static/hmlp-healthy-men-cover2.jpg",
+                mobileImage: "/__ssobj/static/hmlp-healthy-men-prod.jpg"
             },
             talkingAboutBullets: [ "Why you need to be drinking more salt water", "What\\’s so super about superfoods?", "Why feeling and looking good may boost self-esteem this summer", "How to build bigger muscles in your arms", "Why more calories, doesn\\’t mean more muscles" ]
         };
-        var healthyMenHtml = '<div class="hmlp-block" id="healthy-for-men"><div class="hmlp-block__intro"><img src="' + healthyMenContent.logo + '" class="hmlp-block__logo">' + healthyMenContent.quote + '</div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyMenContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyMenContent.editor.name + "</strong> <br>" + healthyMenContent.editor.role + ", <em>" + healthyMenContent.editor.magazine + '</em></p></div><div class="hmlp-block-product"><img src="' + healthyMenContent.product.coverImage + '" class="hmlp-block-product__cover"><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyMenContent.product.sku + '" data-product-id="' + healthyMenContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyMenContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile"></div>';
+        var healthyMenHtml = '<div class="hmlp-block" id="healthy-for-men"><div class="hmlp-block__intro"><img src="' + healthyMenContent.logo + '" class="hmlp-block__logo"><span class="hmlp-block__speech-mark"></span>' + healthyMenContent.quote + '</div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyMenContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyMenContent.editor.name + "</strong> <br>" + healthyMenContent.editor.role + ", <em>" + healthyMenContent.editor.magazine + '</em></p></div><div class="hmlp-block-product"><img src="' + healthyMenContent.product.coverImage + '" class="hmlp-block-product__cover"><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyMenContent.product.sku + '" data-product-id="' + healthyMenContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyMenContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile"></div>';
         healthyMenHtml += '<div class="hmlp-talking-about"><h3 class="hmlp-block__subtitle">' + talkingAboutTitle + '</h3><ul class="hmlp-talking-about-list">';
         healthyMenContent.talkingAboutBullets.forEach(function(el) {
             return healthyMenHtml += '<li class="hmlp-talking-about-list__item">' + el + "</li>";
