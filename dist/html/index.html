@@ -186,7 +186,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 .hmlp-product-img-wrap {
-  margin: 24px -8px;
+  margin: 24px -16px 32px;
 }
 
 .hmlp-product-img {
@@ -291,7 +291,7 @@ body > div[role="main"] > div:nth-of-type(1) {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 24px -8px;
+  margin: 32px -8px;
   padding: 50px 0;
   text-align: center;
 }
@@ -697,6 +697,11 @@ body > div[role="main"] > div:nth-of-type(1) {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
+  }
+  .hmlp-block {
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .hmlp-block-editor {
     -webkit-box-align: center;
@@ -706,6 +711,10 @@ body > div[role="main"] > div:nth-of-type(1) {
     display: -ms-flexbox;
     display: flex;
     margin: 16px 0 24px;
+  }
+  .hmlp-talking-about {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
@@ -765,7 +774,7 @@ $1
             title: "Health, wellbeing & fitness advice at your fingertps",
             body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar, est accumsan consectetur egestas, enim magna condimentum."
         };
-        var heroHtml = '<div class="hmlp-hero"><div class="hmlp-hero__content"><h1 class="hmlp-hero__title">' + heroContent.title + '</h1><p class="hmlp-hero__body">' + heroContent.title + "</p></div></div>";
+        var heroHtml = '<div class="hmlp-hero"><div class="hmlp-hero__content"><h1 class="hmlp-hero__title">' + heroContent.title + '</h1><p class="hmlp-hero__body">' + heroContent.body + "</p></div></div>";
         container.append(heroHtml);
     }
     function stickyNav() {

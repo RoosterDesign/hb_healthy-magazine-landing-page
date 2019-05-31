@@ -85,7 +85,7 @@
             title: `Health, wellbeing & fitness advice at your fingertps`,
             body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar, est accumsan consectetur egestas, enim magna condimentum.`
         };
-        const heroHtml = `<div class="hmlp-hero"><div class="hmlp-hero__content"><h1 class="hmlp-hero__title">${heroContent.title}</h1><p class="hmlp-hero__body">${heroContent.title}</p></div></div>`
+        const heroHtml = `<div class="hmlp-hero"><div class="hmlp-hero__content"><h1 class="hmlp-hero__title">${heroContent.title}</h1><p class="hmlp-hero__body">${heroContent.body}</p></div></div>`
         container.append(heroHtml);
     }
 

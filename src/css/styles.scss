@@ -169,6 +169,7 @@ body.hmlp-sticky-nav--fixed {
             position: fixed;
             top: 0;
             width: 100%;
+            z-index: 2;
         }
     }
 
@@ -254,6 +255,10 @@ body.hmlp-sticky-nav--fixed {
 .hmlp-block {
     // background: $lightGrey;
     // padding: 24px;
+    @media #{$mq-mobile} {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
     @include mq(tablet) {
         display: flex;
         flex-wrap: wrap;
@@ -465,7 +470,7 @@ body.hmlp-sticky-nav--fixed {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .hmlp-product-img-wrap {
-    margin: 24px -8px;
+    margin: 24px -16px 32px;
     @include mq(tablet) {
         display: none;
     }
@@ -553,6 +558,10 @@ body.hmlp-sticky-nav--fixed {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .hmlp-talking-about {
+    @media #{$mq-mobile} {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
     @include mq(tablet) {
         border-top: 1px solid #e3e8e8;
         flex: 1 1 100%;
@@ -604,7 +613,7 @@ body.hmlp-sticky-nav--fixed {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 24px -8px;
+    margin: 32px -8px;
     padding: 50px 0;
     text-align: center;
     @include mq(tablet) {
