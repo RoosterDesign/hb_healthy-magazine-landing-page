@@ -82,8 +82,8 @@
 
     function initHero() {
         const heroContent = {
-            title: `Health, wellbeing & fitness advice at your fingertps`,
-            body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar, est accumsan consectetur egestas, enim magna condimentum.`
+            title: `Expert health, wellbeing & fitness advice at your fingertips`,
+            body: `Discover the latest research and our guides to living healthier.`
         };
         const heroHtml = `<div class="hmlp-hero"><div class="hmlp-hero__content"><h1 class="hmlp-hero__title">${heroContent.title}</h1><p class="hmlp-hero__body">${heroContent.body}</p></div></div>`
         container.append(heroHtml);
@@ -161,7 +161,7 @@
 
         const healthyContent = {
             logo: '/__ssobj/static/hmlp-healthy-logo.png',
-            quote: `<p>Hailed as the big trend of 2019, we\\\’ve done a deep dive into zero waste beauty. It\\\’s all about minimising the waste from your beauty products – starting with excessive packaging.</p><p>Join in by going \\\‘naked\\\’ (ie completely unpackaged) by making a return to bar soap, one old-fashioned product that\\\’s fast becoming the coolest thing to have in your bathroom. (Page 40).</p>`,
+            quote: `<p>Introducing your Mental Wellbeing issue. Turn the page for practical advice from Mental Health experts and explore how to improve your overall wellbeing with delicious eats and the latest health and fitness trends. Check out page 32 for your very own self-care tool kit.</p>`,
             editor: {
                 id: 'ellie-hughes',
                 name: 'Ellie Hughes',
@@ -176,10 +176,11 @@
             },
             talkingAboutBullets: [
                 'Your holiday health to-do list',
-                'Everything you need to know about evening primrose oil',
-                'How to be vegan on a budget',
                 'Your full guide to SPF',
-                'The best veg you need to be eating – Seaweed']
+                'How to be vegan on a budget',
+                'The best veg you need to be eating - Seaweed',
+                'Everything you need to know about Evening Primrose Oil'
+            ]
         };
 
         let healthyHtml = `<div class="hmlp-block" id="healthy"><div class="hmlp-block__intro"><img src="${healthyContent.logo}" class="hmlp-block__logo"><span class="hmlp-block__speech-mark"></span>${healthyContent.quote}</div><div class="hmlp-block-editor"><div id="hmlp-photo-${healthyContent.editor.id}" class="hmlp-block-editor__photo"></div><p><strong>${healthyContent.editor.name}</strong> <br>${healthyContent.editor.role}, <em>${healthyContent.editor.magazine}</em></p></div><div class="hmlp-block-product"><img src="${healthyContent.product.coverImage}" class="hmlp-block-product__cover"><button class="hmlp-quick-add js-quickadd" data-sku="${healthyContent.product.sku}" data-product-id="${healthyContent.product.prodId}">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="${healthyContent.product.mobileImage}" class="hmlp-product-img hmlp-product-img--mobile"></div>`;
@@ -227,7 +228,7 @@
 
         const healthyMenContent = {
             logo: '/__ssobj/static/hmlp-healthy-men-logo.png',
-            quote: `<p>Say hello to our everyday superstar Chris Hemsworth. Hemsworth blesses us with his fitness knowledge on how to build bigger biceps and how he looks after his health in three simple chunks; food, sleep and working out.</p><p>Explore how yoga can help boost physical and mental performance. We also discover how \\\‘clean\\\’ eating may be doing more bad than good and how to move for better sex, tonight!</p>`,
+            quote: `<p>We discover the power of opening up to others and say hello to cover star Ryan Reynolds and learn how he dealt with his struggle with anxiety. Not only do we look at improving your mental wellbeing, we also have expert advice on how to improve your nutrition and fitness - from superfoods to how to build bigger arms - this issue has it all.</p>`,
             editor: {
                 id: 'tom-rowley',
                 name: 'Tom Rowley',
@@ -243,9 +244,9 @@
             talkingAboutBullets: [
                 'Why you need to be drinking more salt water',
                 'What\\\’s so super about superfoods?',
-                'Why feeling and looking good may boost self-esteem this summer',
                 'How to build bigger muscles in your arms',
-                'Why more calories, doesn\\\’t mean more muscles'
+                'Why feeling and looking good may boost self-esteem this summer',
+                'Why more calories doesn’t mean more muscles'
             ]
         };
 

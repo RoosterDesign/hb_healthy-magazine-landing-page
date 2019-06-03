@@ -100,14 +100,18 @@ body > div[role="main"] > div:nth-of-type(1) {
         align-items: center;
         justify-content: flex-end;
         display: flex;
-        padding: 0 70px 0 0;
+        padding: 0;
         text-align: left;
         height: 400px;
     }
 
     &__content {
         @include mq(tablet) {
-            width: 40%;
+            padding: 0 40px;
+            width: 50%;
+        }
+        @include mq(desktop) {
+            padding: 0 80px;
         }
     }
 
@@ -125,6 +129,11 @@ body > div[role="main"] > div:nth-of-type(1) {
         @include mq(tablet) {
             font-size: 33px;
             line-height: 42px;
+        }
+        @include mq(desktop) {
+            font-size: 36px;
+            line-height: 46px;
+            margin-bottom: 15px; 
         }
     }
 
@@ -274,9 +283,8 @@ body.hmlp-sticky-nav--fixed {
             position: relative;
         }
         @include mq(desktop) {
-            // min-width: 580px;
-            min-width: 680px;
-            // padding-left: 40px;
+            // min-width: 680px;
+            min-width: 720px;
             padding-right: 40px;
             padding-bottom: 40px;
         }
@@ -393,6 +401,13 @@ body.hmlp-sticky-nav--fixed {
         // padding: 40px 40px 40px 0;
         padding-right: 40px;
         padding-bottom: 40px;
+    }
+
+    p {
+        @include mq(desktop) {
+            margin: 0 auto;
+            max-width: 150px;
+        }
     }
 
     &__photo {

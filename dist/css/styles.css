@@ -474,12 +474,13 @@ body > div[role="main"] > div:nth-of-type(1) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0 70px 0 0;
+    padding: 0;
     text-align: left;
     height: 400px;
   }
   .hmlp-hero__content {
-    width: 40%;
+    padding: 0 40px;
+    width: 50%;
   }
   .hmlp-hero__title {
     font-size: 33px;
@@ -655,11 +656,19 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 @media (min-width: 1250px) {
+  .hmlp-hero__content {
+    padding: 0 80px;
+  }
+  .hmlp-hero__title {
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 15px;
+  }
   .hmlp-nav__link:hover {
     background: #349185;
   }
   .hmlp-block__intro {
-    min-width: 680px;
+    min-width: 720px;
     padding-right: 40px;
     padding-bottom: 40px;
   }
@@ -674,6 +683,10 @@ body > div[role="main"] > div:nth-of-type(1) {
   .hmlp-block-editor {
     padding-right: 40px;
     padding-bottom: 40px;
+  }
+  .hmlp-block-editor p {
+    margin: 0 auto;
+    max-width: 150px;
   }
   .hmlp-block-product {
     padding-left: 40px;
