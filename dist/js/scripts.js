@@ -147,7 +147,7 @@
             },
             product: {
                 sku: "010311",
-                prodId: "60010311",
+                prodId: "010312",
                 coverImage: "/__ssobj/static/hmlp-healthy-men-cover2.jpg",
                 mobileImage: "/__ssobj/static/hmlp-healthy-men-prod.jpg"
             },

@@ -1,3 +1,5 @@
+
+
 (function(window, document){
 
 
@@ -170,7 +172,8 @@
             },
             product: {
                 sku: '010246',
-                prodId: '60010246',
+                // sku: '010284'
+                prodId: '60010246', // ??
                 coverImage: '/__ssobj/static/hmlp-healthy-cover2.jpg',
                 mobileImage: '/__ssobj/static/hmlp-healthy-prod.jpg'
             },
@@ -237,7 +240,8 @@
             },
             product: {
                 sku: '010311',
-                prodId: '60010311',
+                // sku: '010311',
+                prodId: '010312', // ??
                 coverImage: '/__ssobj/static/hmlp-healthy-men-cover2.jpg',
                 mobileImage: '/__ssobj/static/hmlp-healthy-men-prod.jpg'
             },
