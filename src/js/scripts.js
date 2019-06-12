@@ -274,8 +274,8 @@
             label: 'Read your FREE sample of Healthy For Men here',
             ctaLabel: 'Free Sample',
             modalContent: {
-                link: 'https://www.healthy-magazine.co.uk/wp-content/uploads/magsampler-2019-150/',
-                scriptLink: 'https://www.healthy-magazine.co.uk/wp-content/uploads/magsampler-2019-150/files/html/static/embed.js'
+                link: 'https://www.healthyformen.com/wp-content/uploads/magsampler-latest/',
+                scriptLink: 'https://www.healthyformen.com/wp-content/uploads/magsampler-latest/files/html/static/embed.js'
             }
         };
 
@@ -328,6 +328,7 @@
     $(document).ready(function(){
         container.attr('id', lpPrefix+'-wrap').show();
         container.find('.l-wrap').remove();  
+        $('.global-banners').remove();
         init();    
     });
 

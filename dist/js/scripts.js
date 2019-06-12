@@ -167,8 +167,8 @@
             label: "Read your FREE sample of Healthy For Men here",
             ctaLabel: "Free Sample",
             modalContent: {
-                link: "https://www.healthy-magazine.co.uk/wp-content/uploads/magsampler-2019-150/",
-                scriptLink: "https://www.healthy-magazine.co.uk/wp-content/uploads/magsampler-2019-150/files/html/static/embed.js"
+                link: "https://www.healthyformen.com/wp-content/uploads/magsampler-latest/",
+                scriptLink: "https://www.healthyformen.com/wp-content/uploads/magsampler-latest/files/html/static/embed.js"
             }
         };
         var healthyMenSampleBannerHtml = '<div class="hmlp-sample-banner u-c" id="' + healthyMenSampleBannerContent.id + '"><div class="hmlp-sample-banner__body"><p>' + healthyMenSampleBannerContent.label + '</p><a href="#" class="hmlp-sample-banner__cta js-hmlp-sample-modal" alt="View Sample">' + healthyMenSampleBannerContent.ctaLabel + '</a></div><div class="hmlp-modal-wrap"><div class="hmlp-modal"><span class="hmlp-modal__close js-hmlp-modal-close"><i class="fas fa-times"></i></span><a class="fbp-embed" style="max-width: 100%" href="' + healthyMenSampleBannerContent.modalContent.link + '" data-fbp-lightbox="yes" data-fbp-version="1" data-fbp-width="620px" data-fbp-height="480px">Healthy</a></div></div></div>';
@@ -201,6 +201,7 @@
     $(document).ready(function() {
         container.attr("id", lpPrefix + "-wrap").show();
         container.find(".l-wrap").remove();
+        $(".global-banners").remove();
         init();
     });
 })(window, document);

@@ -737,7 +737,7 @@ body.hmlp-sticky-nav--fixed {
         margin: 0 auto;
         padding: 11px;
         text-align: center;
-        text-decoration: none;
+        text-decoration: none !important;
         transition: all .3s ease-out;
         width: 215px;
         @include mq(tablet) {
