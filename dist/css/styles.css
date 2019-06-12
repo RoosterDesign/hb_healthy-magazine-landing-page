@@ -28,13 +28,28 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 .hmlp-hero {
-  background: url("/__ssobj/static/hmlp-hero-mobile.jpg") 50% 50%;
+  background: url("http://images.hollandandbarrettimages.co.uk/promotionuploads_new/hb/atg/healthymag/healthy1.png") 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: -8px;
   margin-right: -8px;
   padding: 40px 16px;
+  position: relative;
   text-align: center;
+}
+
+.hmlp-hero:before {
+  background: rgba(0, 0, 0, 0.5);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hmlp-hero__content {
+  position: relative;
 }
 
 .hmlp-hero__title, .hmlp-hero__body {
@@ -105,6 +120,25 @@ body > div[role="main"] > div:nth-of-type(1) {
   text-transform: uppercase;
 }
 
+.hmlp-block__intro-quote {
+  margin: 0;
+  padding: 0;
+}
+
+.hmlp-block__intro-quote p {
+  font-style: italic;
+  margin: 0 0 15px;
+}
+
+.hmlp-block__intro-quote p:before,
+.hmlp-block__intro-quote p:after {
+  display: none;
+}
+
+.hmlp-block__intro-editor {
+  display: none;
+}
+
 .hmlp-block__speech-mark {
   color: #dcdcdc;
   float: left;
@@ -127,16 +161,6 @@ body > div[role="main"] > div:nth-of-type(1) {
   margin-bottom: 15px;
   max-width: 175px;
   width: 100%;
-}
-
-.hmlp-block p {
-  font-size: 16px;
-  line-height: 1.4;
-  margin: 0 0 15px;
-}
-
-.hmlp-block p:last-child {
-  margin-bottom: 0;
 }
 
 .hmlp-block__subtitle {
@@ -292,11 +316,23 @@ body > div[role="main"] > div:nth-of-type(1) {
   background-size: cover;
   margin: 32px -8px;
   padding: 50px 0;
+  position: relative;
   text-align: center;
+}
+
+.hmlp-sample-banner:before {
+  background: rgba(0, 0, 0, 0.5);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .hmlp-sample-banner__body {
   margin: 0 auto;
+  position: relative;
   width: 250px;
 }
 
@@ -335,11 +371,11 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 #hmlp-healthy-banner {
-  background-image: url("/__ssobj/static/hmlp-healthy-banner-mobile.jpg");
+  background-image: url("/__ssobj/static/hmlp-healthy-banner-mobile2.jpg");
 }
 
 #hmlp-healthy-for-men-banner {
-  background-image: url("/__ssobj/static/hmlp-healthy-men-banner-mobile.jpg");
+  background-image: url("/__ssobj/static/hmlp-healthy-men-banner-mobile2.jpg");
 }
 
 .hmlp-modal-wrap {
@@ -464,7 +500,7 @@ body > div[role="main"] > div:nth-of-type(1) {
     padding: 48px 24px;
   }
   .hmlp-hero {
-    background-image: url("/__ssobj/static/hmlp-hero.jpg");
+    background-image: url("http://images.hollandandbarrettimages.co.uk/promotionuploads_new/hb/atg/healthymag/healthy2.png");
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -477,6 +513,11 @@ body > div[role="main"] > div:nth-of-type(1) {
     padding: 0;
     text-align: left;
     height: 400px;
+  }
+  .hmlp-hero:before {
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0)), color-stop(60%, rgba(0, 0, 0, 0.6)));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.6) 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
   }
   .hmlp-hero__content {
     padding: 0 40px;
@@ -517,11 +558,21 @@ body > div[role="main"] > div:nth-of-type(1) {
     padding: 0;
   }
   .hmlp-block__intro {
-    -webkit-box-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
     padding: 0 30px 30px 0;
     position: relative;
+  }
+  .hmlp-block__intro-quote {
+    padding-top: 20px;
+  }
+  .hmlp-block__intro-quote p {
+    font-size: 19px;
+    line-height: 1.6;
+  }
+  .hmlp-block__intro-editor {
+    display: block;
   }
   .hmlp-block__speech-mark {
     height: 50px;
@@ -531,7 +582,7 @@ body > div[role="main"] > div:nth-of-type(1) {
     font-size: 175px;
   }
   .hmlp-block__logo {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     max-width: 225px;
   }
   .hmlp-block__subtitle {
@@ -542,15 +593,24 @@ body > div[role="main"] > div:nth-of-type(1) {
     margin-top: 60px;
   }
   .hmlp-block-editor {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     padding: 0 30px 30px 0;
     text-align: center;
   }
+  .hmlp-block-editor p {
+    display: none;
+  }
   .hmlp-block-editor__photo {
     height: 0;
-    margin: 0 auto 20px;
+    margin: 0 auto;
     padding-bottom: 100%;
     max-width: 270px;
     width: 100%;
@@ -597,15 +657,19 @@ body > div[role="main"] > div:nth-of-type(1) {
   }
   .hmlp-sample-banner {
     margin: 40px 0 0;
-    padding: 60px 70px 40px 70px;
+    min-height: 250px;
+    padding: 50px 50px 0 50px;
     text-align: left;
+  }
+  .hmlp-sample-banner:before {
+    display: none;
   }
   .hmlp-sample-banner__body {
     margin: 0;
-    width: 390px;
+    width: 350px;
   }
   .hmlp-sample-banner__body p {
-    font-size: 33px;
+    font-size: 28px;
     line-height: 1.3;
     margin-bottom: 20px;
   }
@@ -613,10 +677,13 @@ body > div[role="main"] > div:nth-of-type(1) {
     margin: 0;
   }
   #hmlp-healthy-banner {
-    background-image: url("/__ssobj/static/hmlp-healthy-banner.jpg");
+    background-image: url("/__ssobj/static/hmlp-healthy-banner2.jpg");
   }
   #hmlp-healthy-for-men-banner {
-    background-image: url("/__ssobj/static/hmlp-healthy-men-banner.jpg");
+    background-image: url("/__ssobj/static/hmlp-healthy-men-banner2.jpg");
+  }
+  #hmlp-healthy-for-men-banner .hmlp-sample-banner__body {
+    float: right;
   }
   .hmlp-modal-wrap {
     padding: 50px;
@@ -668,12 +735,19 @@ body > div[role="main"] > div:nth-of-type(1) {
     background: #349185;
   }
   .hmlp-block__intro {
-    min-width: 720px;
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    min-width: 680px;
     padding-right: 40px;
     padding-bottom: 40px;
   }
+  .hmlp-block__intro-quote {
+    padding-top: 30px;
+  }
   .hmlp-block__speech-mark {
     height: 80px;
+    margin-top: 5px;
   }
   .hmlp-block__speech-mark:before {
     font-size: 275px;
@@ -684,13 +758,21 @@ body > div[role="main"] > div:nth-of-type(1) {
     padding-right: 40px;
     padding-bottom: 40px;
   }
-  .hmlp-block-editor p {
-    margin: 0 auto;
-    max-width: 150px;
-  }
   .hmlp-block-product {
-    padding-left: 40px;
-    padding-bottom: 40px;
+    padding: 0 20px 40px 40px;
+  }
+  .hmlp-block-product__cover {
+    max-width: 180px;
+  }
+  .hmlp-sample-banner {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .hmlp-sample-banner__body {
+    width: 390px;
+  }
+  .hmlp-sample-banner__body p {
+    font-size: 33px;
   }
   .hmlp-twitter-banner__twitter-logo {
     top: 0;
