@@ -172,7 +172,7 @@
             },
             product: {
                 sku: '010284',
-                prodId: '',
+                prodId: '60010284',
                 coverImage: '/__ssobj/static/hmlp-healthy-cover3.jpg',
                 mobileImage: '/__ssobj/static/hmlp-healthy-prod2.jpg'
             },
@@ -206,8 +206,8 @@
             label: 'Read your FREE sample of Healthy here',
             ctaLabel: 'Free Sample',
             modalContent: {
-                link: 'https://www.healthy-magazine.co.uk/wp-content/uploads/magsampler-latest/',
-                scriptLink: 'https://www.healthy-magazine.co.uk/wp-content/uploads/magsampler-latest/files/html/static/embed.js'
+                link: 'https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-august-2019-sampler/',
+                scriptLink: 'https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-august-2019-sampler/files/html/static/embed.js'
             }
 
         };
@@ -240,7 +240,7 @@
             },
             product: {
                 sku: '010312',
-                prodId: '', // ??
+                prodId: '60010312',
                 coverImage: '/__ssobj/static/hmlp-healthy-men-cover3.jpg',
                 mobileImage: '/__ssobj/static/hmlp-healthy-men-prod2.jpg'
             },
@@ -274,8 +274,8 @@
             label: 'Read your FREE sample of Healthy For Men here',
             ctaLabel: 'Free Sample',
             modalContent: {
-                link: 'https://www.healthyformen.com/wp-content/uploads/magsampler-latest/',
-                scriptLink: 'https://www.healthyformen.com/wp-content/uploads/magsampler-latest/files/html/static/embed.js'
+                link: 'https://www.healthyformen.com/wp-content/uploads/healthy_for_men-jul-aug-2019-sampler/',
+                scriptLink: 'https://www.healthyformen.com/wp-content/uploads/healthy_for_men-jul-aug-2019-sampler/files/html/static/embed.js'
             }
         };
 
