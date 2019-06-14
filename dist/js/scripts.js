@@ -47,7 +47,7 @@
     function initHero() {
         var heroContent = {
             title: "Expert health, wellbeing & fitness advice at your fingertips",
-            body: "Discover the latest research and our guides to living healthier."
+            body: "Discover the latest health and wellness research and our guides to living healthier."
         };
         var heroHtml = '<div class="hmlp-hero"><div class="hmlp-hero__content"><h1 class="hmlp-hero__title">' + heroContent.title + '</h1><p class="hmlp-hero__body">' + heroContent.body + "</p></div></div>";
         container.append(heroHtml);
@@ -95,7 +95,7 @@
     function initHealthy() {
         var healthyContent = {
             logo: "/__ssobj/static/hmlp-healthy-logo.png",
-            quote: "<p>Introducing your Mental Wellbeing issue. Turn the page for practical advice from Mental Health experts and explore how to improve your overall wellbeing with delicious eats and the latest health and fitness trends. Check out page 32 for your very own self-care tool kit.</p>",
+            quote: "<p>Introducing your Mental Wellbeing issue. Turn the page for practical advice from Mental Health experts and explore how to improve your overall wellbeing with delicious recipes and the latest health and fitness trends. Check out page 32 for your very own self-care tool kit.</p>",
             editor: {
                 id: "ellie-hughes",
                 name: "Ellie Hughes",
@@ -105,17 +105,20 @@
             product: {
                 sku: "010284",
                 prodId: "60010284",
+                title: "Healthy Magazine Issue 151 2019: Mental Wellbeing",
+                price: 2.99,
+                url: "/shop/product/healthy-magazine-issue-151-2019-mental-wellbeing-60010284?skuid=010284",
                 coverImage: "/__ssobj/static/hmlp-healthy-cover3.jpg",
                 mobileImage: "/__ssobj/static/hmlp-healthy-prod2.jpg"
             },
             talkingAboutBullets: [ "Your holiday health to-do list", "Your full guide to SPF", "How to be vegan on a budget", "The best veg you need to be eating - Seaweed", "Everything you need to know about Evening Primrose Oil" ]
         };
-        var healthyHtml = '<div class="hmlp-block" id="healthy"><div class="hmlp-block__intro"><img src="' + healthyContent.logo + '" class="hmlp-block__logo" title="Healthy Magazine"><span class="hmlp-block__speech-mark"></span><blockquote class="hmlp-block__intro-quote">' + healthyContent.quote + '</blockquote><p class="hmlp-block__intro-editor"><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-product"><img src="' + healthyContent.product.coverImage + '" class="hmlp-block-product__cover" title="Healthy Magazine"><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy Magazine"></div>';
+        var healthyHtml = '<div class="hmlp-block" id="healthy"><div class="hmlp-block__intro"><img src="' + healthyContent.logo + '" class="hmlp-block__logo" title="Healthy Magazine"><i class="fas fa-quote-left hmlp-block__speech-mark"></i><blockquote class="hmlp-block__intro-quote">' + healthyContent.quote + '</blockquote><p class="hmlp-block__intro-editor"><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-product"><a href="' + healthyContent.product.url + '" title="' + healthyContent.product.title + '"><img src="' + healthyContent.product.coverImage + '" class="hmlp-block-product__cover" title="Healthy Magazine"></a><p class="hmlp-block-product__price">&pound;' + healthyContent.product.price + '</p><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy Magazine"></div>';
         healthyHtml += '<div class="hmlp-talking-about"><h3 class="hmlp-block__subtitle">' + talkingAboutTitle + '</h3><ul class="hmlp-talking-about-list">';
         healthyContent.talkingAboutBullets.forEach(function(el) {
             return healthyHtml += '<li class="hmlp-talking-about-list__item">' + el + "</li>";
         });
-        healthyHtml += '</ul></div><button class="hmlp-quick-add hmlp-quick-add--mobile js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div>';
+        healthyHtml += '</ul></div><p class="hmlp-block-product__price hmlp-block-product__price--mobile">&pound;' + healthyContent.product.price + '</p><button class="hmlp-quick-add hmlp-quick-add--mobile js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div>';
         container.append(healthyHtml);
     }
     function initHealthySampleBanner() {
@@ -138,7 +141,7 @@
     function initHealthyMen() {
         var healthyMenContent = {
             logo: "/__ssobj/static/hmlp-healthy-men-logo.png",
-            quote: "<p>We discover the power of opening up to others and say hello to cover star Ryan Reynolds and learn how he dealt with his struggle with anxiety. Not only do we look at improving your mental wellbeing, we also have expert advice on how to improve your nutrition and fitness - from superfoods to how to build bigger arms - this issue has it all.</p>",
+            quote: "<p>We discover the power of opening up to others and say hello to cover star Ryan Reynolds to learn how he dealt with his struggle with anxiety. Not only do we look at improving your mental wellbeing, we also have expert advice on how to improve your nutrition and fitness - from superfoods to how to build bigger arms - this issue has it all.</p>",
             editor: {
                 id: "tom-rowley",
                 name: "Tom Rowley",
@@ -148,17 +151,20 @@
             product: {
                 sku: "010312",
                 prodId: "60010312",
+                title: "Healthy For Men Issue 83 2019: Mental Health",
+                price: 2.49,
+                url: "/shop/product/healthy-for-men-issue-83-2019-mental-health-60010312?skuid=010312",
                 coverImage: "/__ssobj/static/hmlp-healthy-men-cover3.jpg",
                 mobileImage: "/__ssobj/static/hmlp-healthy-men-prod2.jpg"
             },
             talkingAboutBullets: [ "Why you need to be drinking more salt water", "What\\’s so super about superfoods?", "How to build bigger muscles in your arms", "Why feeling and looking good may boost self-esteem this summer", "Why more calories doesn’t mean more muscles" ]
         };
-        var healthyMenHtml = '<div class="hmlp-block" id="healthy-for-men"><div class="hmlp-block__intro"><img src="' + healthyMenContent.logo + '" class="hmlp-block__logo" title="Healthy For Men Magazine"><span class="hmlp-block__speech-mark"></span><blockquote class="hmlp-block__intro-quote">' + healthyMenContent.quote + '</blockquote><p class="hmlp-block__intro-editor"><strong>' + healthyMenContent.editor.name + "</strong> <br>" + healthyMenContent.editor.role + ", <em>" + healthyMenContent.editor.magazine + '</em></p></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyMenContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyMenContent.editor.name + "</strong> <br>" + healthyMenContent.editor.role + ", <em>" + healthyMenContent.editor.magazine + '</em></p></div><div class="hmlp-block-product"><img src="' + healthyMenContent.product.coverImage + '" class="hmlp-block-product__cover" title="Healthy For Men Magazine"><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyMenContent.product.sku + '" data-product-id="' + healthyMenContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyMenContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy For Men Magazine"></div>';
+        var healthyMenHtml = '<div class="hmlp-block" id="healthy-for-men"><div class="hmlp-block__intro"><img src="' + healthyMenContent.logo + '" class="hmlp-block__logo" title="Healthy For Men Magazine"><i class="fas fa-quote-left hmlp-block__speech-mark"></i><blockquote class="hmlp-block__intro-quote">' + healthyMenContent.quote + '</blockquote><p class="hmlp-block__intro-editor"><strong>' + healthyMenContent.editor.name + "</strong> <br>" + healthyMenContent.editor.role + ", <em>" + healthyMenContent.editor.magazine + '</em></p></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyMenContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyMenContent.editor.name + "</strong> <br>" + healthyMenContent.editor.role + ", <em>" + healthyMenContent.editor.magazine + '</em></p></div><div class="hmlp-block-product"><a href="' + healthyMenContent.product.url + '" title="' + healthyMenContent.product.title + '"><img src="' + healthyMenContent.product.coverImage + '" class="hmlp-block-product__cover" title="Healthy For Men Magazine"></a><p class="hmlp-block-product__price">&pound;' + healthyMenContent.product.price + '</p><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyMenContent.product.sku + '" data-product-id="' + healthyMenContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyMenContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy For Men Magazine"></div>';
         healthyMenHtml += '<div class="hmlp-talking-about"><h3 class="hmlp-block__subtitle">' + talkingAboutTitle + '</h3><ul class="hmlp-talking-about-list">';
         healthyMenContent.talkingAboutBullets.forEach(function(el) {
             return healthyMenHtml += '<li class="hmlp-talking-about-list__item">' + el + "</li>";
         });
-        healthyMenHtml += '</ul></div><button class="hmlp-quick-add hmlp-quick-add--mobile js-quickadd" data-sku="' + healthyMenContent.product.sku + '" data-product-id="' + healthyMenContent.product.prodId + '">Quick Add</button></div>';
+        healthyMenHtml += '</ul></div><p class="hmlp-block-product__price hmlp-block-product__price--mobile">&pound;' + healthyMenContent.product.price + '</p><button class="hmlp-quick-add hmlp-quick-add--mobile js-quickadd" data-sku="' + healthyMenContent.product.sku + '" data-product-id="' + healthyMenContent.product.prodId + '">Quick Add</button></div>';
         container.append(healthyMenHtml);
     }
     function initHealthyMenSampleBanner() {

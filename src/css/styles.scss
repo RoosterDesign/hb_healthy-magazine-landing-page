@@ -301,6 +301,7 @@ body.hmlp-sticky-nav--fixed {
         }
         @include mq(desktop) {
             flex: 2;
+            max-width: 680px;
             min-width: 680px;
             padding-right: 40px;
             padding-bottom: 40px;
@@ -313,9 +314,9 @@ body.hmlp-sticky-nav--fixed {
         @include mq(tablet) {
             padding-top: 20px;
         }
-        @include mq(desktop) {
-            padding-top: 30px;
-        }
+        // @include mq(desktop) {
+        //     padding-top: 30px;
+        // }
     }
 
     &__intro-quote p {
@@ -357,34 +358,39 @@ body.hmlp-sticky-nav--fixed {
     &__speech-mark {
         color: #dcdcdc;
         float: left;
-        height: 40px;
+        font-size: 50px; //
+        // height: 40px;
         line-height: 1;
+        margin: -10px 15px 0 0;
         overflow: hidden;
         @include mq(tablet) {
-            height: 50px;
-            padding-right: 5px;
+            font-size: 60px; //
+            margin-top: 10px;
+            margin-right: 20px
+            // height: 50px;
+            // padding-right: 5px;
         }
-        @include mq(desktop) {
-            height: 80px;
-            margin-top: 5px;
-        }
+        // @include mq(desktop) {
+            // height: 80px;
+            // margin-top: 5px;
+        // }
     }
 
-    &__speech-mark:before {
-        content: "\\201C";
-        font-size: 150px;
-        left: -6px;
-        position: relative;
-        top: -18px;
-        @include mq(tablet) {
-            font-size: 175px;
-        }
-        @include mq(desktop) {
-            font-size: 275px;
-            left: -10px;
-            top: -30px;
-        }        
-    }
+    // &__speech-mark:before {
+    //     content: "\\201C";
+    //     font-size: 150px;
+    //     left: -6px;
+    //     position: relative;
+    //     top: -18px;
+    //     @include mq(tablet) {
+    //         font-size: 175px;
+    //     }
+    //     @include mq(desktop) {
+    //         font-size: 275px;
+    //         left: -10px;
+    //         top: -30px;
+    //     }        
+    // }
 
     &__logo {
         display: block;
@@ -500,6 +506,7 @@ body.hmlp-sticky-nav--fixed {
         display: inline-block;
         flex: 1;
         padding: 0 0 30px 30px;
+        text-align: center;
     }
     @include mq(desktop) {
         padding: 0 20px 40px 40px;
@@ -510,10 +517,30 @@ body.hmlp-sticky-nav--fixed {
         box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.10);
         display: block;
         height: auto;
-        margin: 0 auto 20px;
+        margin: 0 auto;
         max-width: 150px;
         @include mq(desktop) {
             max-width: 180px;
+        }
+    }
+
+    &__price {
+        color: #000;
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1;
+        margin: 15px auto 12px;
+        text-align: center;
+        @include mq(tablet) {
+            font-size: 18px;
+        }
+    }
+
+    &__price--mobile {
+        display: block;
+        @include mq(tablet) {
+            display: none;
         }
     }
 
@@ -628,7 +655,7 @@ body.hmlp-sticky-nav--fixed {
 
 .hmlp-talking-about-list {
     font-size: 0;
-    margin: 0 0 16px 16px;
+    margin: 0 0 16px 0;
     padding: 0;
     @include mq(tablet) {
         column-count: 3;
@@ -638,10 +665,11 @@ body.hmlp-sticky-nav--fixed {
     &__item {
         font-size: 16px;
         line-height: 1.4;
-        margin: 0 0 8px;
+        margin: 0 0 8px 1em;
         padding: 0;
         @include mq(tablet) {
-            padding-right: 56px;            
+            // padding-right: 56px;
+            padding-right: 30px;
         }
         @include mq(tablet) {
             // font-size: 18px;

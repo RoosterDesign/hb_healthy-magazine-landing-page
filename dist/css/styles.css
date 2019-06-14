@@ -142,17 +142,10 @@ body > div[role="main"] > div:nth-of-type(1) {
 .hmlp-block__speech-mark {
   color: #dcdcdc;
   float: left;
-  height: 40px;
+  font-size: 50px;
   line-height: 1;
+  margin: -10px 15px 0 0;
   overflow: hidden;
-}
-
-.hmlp-block__speech-mark:before {
-  content: "\\201C";
-  font-size: 150px;
-  left: -6px;
-  position: relative;
-  top: -18px;
 }
 
 .hmlp-block__logo {
@@ -204,8 +197,22 @@ body > div[role="main"] > div:nth-of-type(1) {
   box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
   display: block;
   height: auto;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   max-width: 150px;
+}
+
+.hmlp-block-product__price {
+  color: #000;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 15px auto 12px;
+  text-align: center;
+}
+
+.hmlp-block-product__price--mobile {
+  display: block;
 }
 
 .hmlp-product-img-wrap {
@@ -291,14 +298,14 @@ body > div[role="main"] > div:nth-of-type(1) {
 
 .hmlp-talking-about-list {
   font-size: 0;
-  margin: 0 0 16px 16px;
+  margin: 0 0 16px 0;
   padding: 0;
 }
 
 .hmlp-talking-about-list__item {
   font-size: 16px;
   line-height: 1.4;
-  margin: 0 0 8px;
+  margin: 0 0 8px 1em;
   padding: 0;
 }
 
@@ -575,11 +582,9 @@ body > div[role="main"] > div:nth-of-type(1) {
     display: block;
   }
   .hmlp-block__speech-mark {
-    height: 50px;
-    padding-right: 5px;
-  }
-  .hmlp-block__speech-mark:before {
-    font-size: 175px;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-right: 20px;
   }
   .hmlp-block__logo {
     margin-bottom: 0;
@@ -628,6 +633,13 @@ body > div[role="main"] > div:nth-of-type(1) {
     -ms-flex: 1;
     flex: 1;
     padding: 0 0 30px 30px;
+    text-align: center;
+  }
+  .hmlp-block-product__price {
+    font-size: 18px;
+  }
+  .hmlp-block-product__price--mobile {
+    display: none;
   }
   .hmlp-product-img-wrap {
     display: none;
@@ -653,7 +665,7 @@ body > div[role="main"] > div:nth-of-type(1) {
     margin-bottom: 0;
   }
   .hmlp-talking-about-list__item {
-    padding-right: 56px;
+    padding-right: 30px;
   }
   .hmlp-sample-banner {
     margin: 40px 0 0;
@@ -738,21 +750,10 @@ body > div[role="main"] > div:nth-of-type(1) {
     -webkit-box-flex: 2;
     -ms-flex: 2;
     flex: 2;
+    max-width: 680px;
     min-width: 680px;
     padding-right: 40px;
     padding-bottom: 40px;
-  }
-  .hmlp-block__intro-quote {
-    padding-top: 30px;
-  }
-  .hmlp-block__speech-mark {
-    height: 80px;
-    margin-top: 5px;
-  }
-  .hmlp-block__speech-mark:before {
-    font-size: 275px;
-    left: -10px;
-    top: -30px;
   }
   .hmlp-block-editor {
     padding-right: 40px;
