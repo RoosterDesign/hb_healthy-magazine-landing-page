@@ -95,7 +95,7 @@
     function initHealthy() {
         var healthyContent = {
             logo: "/__ssobj/static/hmlp-healthy-logo.png",
-            quote: "<p>Introducing your Mental Wellbeing issue. Turn the page for practical advice from Mental Health experts and explore how to improve your overall wellbeing with delicious recipes and the latest health and fitness trends. Check out page 32 for your very own self-care tool kit.</p>",
+            quote: "<p>Welcome to our very first vagina issue. This issue gives women the knowledge and power to love our bodies starting with an empowering take on orgasms. Elsewhere, we meet some eco-beauty warriors to how find out how they\\’re living the zero-waste lifestyle and find out how pollution could affect your hair. We also prove you don\\’t need cream or butter to make indulgent desserts!</p>",
             editor: {
                 id: "ellie-hughes",
                 name: "Ellie Hughes",
@@ -103,15 +103,15 @@
                 magazine: "Healthy"
             },
             product: {
-                sku: "010284",
-                prodId: "60010284",
-                title: "Healthy Magazine Issue 151 2019: Mental Wellbeing",
+                sku: "010290",
+                prodId: "",
+                title: "",
                 price: 2.99,
-                url: "/shop/product/healthy-magazine-issue-151-2019-mental-wellbeing-60010284?skuid=010284",
-                coverImage: "/__ssobj/static/hmlp-healthy-cover3.jpg",
-                mobileImage: "/__ssobj/static/hmlp-healthy-prod2.jpg"
+                url: "",
+                coverImage: "/__ssobj/static/hmlp-healthy-cover-270719.jpg",
+                mobileImage: "/__ssobj/static/hmlp-healthy-prod-270719-mobile.jpg"
             },
-            talkingAboutBullets: [ "Your holiday health to-do list", "Your full guide to SPF", "How to be vegan on a budget", "The best veg you need to be eating - Seaweed", "Everything you need to know about Evening Primrose Oil" ]
+            talkingAboutBullets: [ "Your contraception life plan", "The latest research into endometriosis", "The microbiome down below", "Food trends: meat-free", "How to eat for your hormones", "How to master the lunge" ]
         };
         var healthyHtml = '<div class="hmlp-block" id="healthy"><div class="hmlp-block__intro"><img src="' + healthyContent.logo + '" class="hmlp-block__logo" title="Healthy Magazine"><i class="fas fa-quote-left hmlp-block__speech-mark"></i><blockquote class="hmlp-block__intro-quote">' + healthyContent.quote + '</blockquote><p class="hmlp-block__intro-editor"><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-product"><a href="' + healthyContent.product.url + '" title="' + healthyContent.product.title + '"><img src="' + healthyContent.product.coverImage + '" class="hmlp-block-product__cover" title="Healthy Magazine"></a><p class="hmlp-block-product__price">&pound;' + healthyContent.product.price + '</p><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy Magazine"></div>';
         healthyHtml += '<div class="hmlp-talking-about"><h3 class="hmlp-block__subtitle">' + talkingAboutTitle + '</h3><ul class="hmlp-talking-about-list">';
@@ -127,8 +127,8 @@
             label: "Read your FREE sample of Healthy here",
             ctaLabel: "Free Sample",
             modalContent: {
-                link: "https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-august-2019-sampler/",
-                scriptLink: "https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-august-2019-sampler/files/html/static/embed.js"
+                link: "https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-september-2019-sampler/",
+                scriptLink: "https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-september-2019-sampler/files/html/static/embed.js"
             }
         };
         var healthySampleBannerHtml = '<div class="hmlp-sample-banner u-c" id="' + healthySampleBannerContent.id + '"><div class="hmlp-sample-banner__body"><p>' + healthySampleBannerContent.label + '</p><a href="#" class="hmlp-sample-banner__cta js-hmlp-sample-modal" alt="View Sample">' + healthySampleBannerContent.ctaLabel + '</a></div><div class="hmlp-modal-wrap"><div class="hmlp-modal"><span class="hmlp-modal__close js-hmlp-modal-close"><i class="fas fa-times"></i></span><a class="fbp-embed" style="max-width: 100%" href="' + healthySampleBannerContent.modalContent.link + '" data-fbp-lightbox="yes" data-fbp-version="1" data-fbp-width="620px" data-fbp-height="480px">Healthy</a></div></div></div>';

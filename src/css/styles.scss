@@ -83,7 +83,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .hmlp-hero {
-    background: url('http://images.hollandandbarrettimages.co.uk/promotionuploads_new/hb/atg/healthymag/healthy1.png') 50% 50%;
+    background: url('/__ssobj/static/hero-270719-mobile.png') 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -8px;
@@ -97,7 +97,7 @@ body > div[role="main"] > div:nth-of-type(1) {
         padding: 48px 24px;
     }
     @include mq(tablet) {
-        background-image: url('http://images.hollandandbarrettimages.co.uk/promotionuploads_new/hb/atg/healthymag/healthy2.png');
+        background-image: url('/__ssobj/static/hero-270719.png');
         align-items: center;
         justify-content: flex-end;
         display: flex;
@@ -788,10 +788,17 @@ body.hmlp-sticky-nav--fixed {
 }
 
 #hmlp-healthy-banner {
-    background-image: url('/__ssobj/static/hmlp-healthy-banner-mobile2.jpg');
+    background-image: url('/__ssobj/static/hmlp-healthy-banner-270719-mobile.jpg');
     @include mq(tablet) {
-        background-image: url('/__ssobj/static/hmlp-healthy-banner2.jpg');
+        background-image: url('/__ssobj/static/hmlp-healthy-banner-270719.jpg');
     }
+
+    .hmlp-sample-banner__body {
+        @include mq(tablet) {
+            float: right;
+        }
+    }
+
 }
 
 #hmlp-healthy-for-men-banner {
