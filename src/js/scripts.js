@@ -172,10 +172,10 @@
             },
             product: {
                 sku: '010290',
-                prodId: '',
-                title: '',
+                prodId: '60010290',
+                title: 'Healthy Magazine Issue 152: Female Health',
                 price: 2.99,
-                url: '',
+                url: 'healthy-magazine-issue-152-female-health-60010290?skuid=010290',
                 coverImage: '/__ssobj/static/hmlp-healthy-cover-270719.jpg',
                 mobileImage: '/__ssobj/static/hmlp-healthy-prod-270719-mobile.jpg'
             },
