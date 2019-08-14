@@ -141,7 +141,7 @@
     function initHealthyMen() {
         var healthyMenContent = {
             logo: "/__ssobj/static/hmlp-healthy-men-logo.png",
-            quote: "<p>We discover the power of opening up to others and say hello to cover star Ryan Reynolds to learn how he dealt with his struggle with anxiety. Not only do we look at improving your mental wellbeing, we also have expert advice on how to improve your nutrition and fitness - from superfoods to how to build bigger arms - this issue has it all.</p>",
+            quote: "<p>Discover the importance and reality of going for a health check and why you shouldn\\’t be scared to visit your GP. We detail what to expect your prostate is being inspected, to what actually happens when being tested for diabetes.</p><p>What\\’s Jason Momoa\\’s blueprint for health? Find out inside (Psst, it includes beer!)</p><p>Interested in supplementing your diet with protein bars? We discuss the best ones and which type to eat, when. PLUS grab a FREE PHD Smart Plant protein bar and a SIS Surge Gel with every issue.</p>",
             editor: {
                 id: "tom-rowley",
                 name: "Tom Rowley",
@@ -149,15 +149,16 @@
                 magazine: "Healthy For Men"
             },
             product: {
-                sku: "010312",
-                prodId: "60010312",
-                title: "Healthy For Men Issue 83 2019: Mental Health",
+                sku: "",
+                prodId: "",
+                title: "",
                 price: 2.99,
-                url: "/shop/product/healthy-for-men-issue-83-2019-mental-health-60010312?skuid=010312",
-                coverImage: "/__ssobj/static/hmlp-healthy-men-cover3.jpg",
-                mobileImage: "/__ssobj/static/hmlp-healthy-men-prod2.jpg"
+                url: "",
+                coverImage: "/__ssobj/static/hmlp-men-cover-170819.jpg", // replace
+                mobileImage: "/__ssobj/static/hmlp-men-prod-170819.png" // replace
             },
-            talkingAboutBullets: [ "Why you need to be drinking more salt water", "What\\’s so super about superfoods?", "How to build bigger muscles in your arms", "Why feeling and looking good may boost self-esteem this summer", "Why more calories doesn’t mean more muscles" ]
+            talkingAboutBullets: [ "How Bear Grylls stays tough", "Rest days: the truth", "Bedtime snacking. Do or don\\’t?", "Fat shredding workout", "Healthy, tasty and affordable recipes", "Beat \\‘male menopause\\’" ]
+
         };
         var healthyMenHtml = '<div class="hmlp-block" id="healthy-for-men"><div class="hmlp-block__intro"><img src="' + healthyMenContent.logo + '" class="hmlp-block__logo" title="Healthy For Men Magazine"><i class="fas fa-quote-left hmlp-block__speech-mark"></i><blockquote class="hmlp-block__intro-quote">' + healthyMenContent.quote + '</blockquote><p class="hmlp-block__intro-editor"><strong>' + healthyMenContent.editor.name + "</strong> <br>" + healthyMenContent.editor.role + ", <em>" + healthyMenContent.editor.magazine + '</em></p></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyMenContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyMenContent.editor.name + "</strong> <br>" + healthyMenContent.editor.role + ", <em>" + healthyMenContent.editor.magazine + '</em></p></div><div class="hmlp-block-product"><a href="' + healthyMenContent.product.url + '" title="' + healthyMenContent.product.title + '"><img src="' + healthyMenContent.product.coverImage + '" class="hmlp-block-product__cover" title="Healthy For Men Magazine"></a><p class="hmlp-block-product__price">&pound;' + healthyMenContent.product.price + '</p><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyMenContent.product.sku + '" data-product-id="' + healthyMenContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyMenContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy For Men Magazine"></div>';
         healthyMenHtml += '<div class="hmlp-talking-about"><h3 class="hmlp-block__subtitle">' + talkingAboutTitle + '</h3><ul class="hmlp-talking-about-list">';
@@ -173,8 +174,8 @@
             label: "Read your FREE sample of Healthy For Men here",
             ctaLabel: "Free Sample",
             modalContent: {
-                link: "https://www.healthyformen.com/wp-content/uploads/healthy_for_men-jul-aug-2019-sampler/",
-                scriptLink: "https://www.healthyformen.com/wp-content/uploads/healthy_for_men-jul-aug-2019-sampler/files/html/static/embed.js"
+                link: "https://www.healthyformen.com/wp-content/uploads/healthy_for_men-sep-oct-2019-sampler/",
+                scriptLink: "https://www.healthyformen.com/wp-content/uploads/healthy_for_men-sep-oct-2019-sampler/files/html/static/embed.js"
             }
         };
         var healthyMenSampleBannerHtml = '<div class="hmlp-sample-banner u-c" id="' + healthyMenSampleBannerContent.id + '"><div class="hmlp-sample-banner__body"><p>' + healthyMenSampleBannerContent.label + '</p><a href="#" class="hmlp-sample-banner__cta js-hmlp-sample-modal" alt="View Sample">' + healthyMenSampleBannerContent.ctaLabel + '</a></div><div class="hmlp-modal-wrap"><div class="hmlp-modal"><span class="hmlp-modal__close js-hmlp-modal-close"><i class="fas fa-times"></i></span><a class="fbp-embed" style="max-width: 100%" href="' + healthyMenSampleBannerContent.modalContent.link + '" data-fbp-lightbox="yes" data-fbp-version="1" data-fbp-width="620px" data-fbp-height="480px">Healthy</a></div></div></div>';

@@ -83,7 +83,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .hmlp-hero {
-    background: url('/__ssobj/static/hero-270719-mobile.png') 50% 50%;
+    background: url('/__ssobj/static/hero-170819-mobile.png') 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -8px;
@@ -97,7 +97,7 @@ body > div[role="main"] > div:nth-of-type(1) {
         padding: 48px 24px;
     }
     @include mq(tablet) {
-        background-image: url('/__ssobj/static/hero-270719.png');
+        background-image: url('/__ssobj/static/hero-170819.png');
         align-items: center;
         justify-content: flex-end;
         display: flex;
@@ -444,14 +444,14 @@ body.hmlp-sticky-nav--fixed {
         margin: 16px 0 24px;
     }    
     @include mq(tablet) {
-        align-items: center;
-        display: flex;
+        // align-items: center;
+        // display: flex;
         flex: 1;
-        padding: 0 30px 30px 0;
+        padding: 50px 30px 30px 0;
         text-align: center;
     }
     @include mq(tablet-lg) {
-        padding-top: 0;
+        padding-top: 75px;
     }
     @include mq(desktop) {
         padding-right: 40px;
@@ -495,7 +495,8 @@ body.hmlp-sticky-nav--fixed {
 #hmlp-photo-tom-rowley {
     background-image: url('/__ssobj/static/hmlp-tom-rowley-mobile.jpg');
     @include mq(tablet) {
-        background-image: url('/__ssobj/static/hmlp-tom-rowley.jpg');
+        // background-image: url('/__ssobj/static/hmlp-tom-rowley.jpg');
+        background-image: url('/__ssobj/static/hmlp-men-free-goodies.png');
     }
 }
 
@@ -802,9 +803,9 @@ body.hmlp-sticky-nav--fixed {
 }
 
 #hmlp-healthy-for-men-banner {
-    background-image: url('/__ssobj/static/hmlp-healthy-men-banner-mobile2.jpg');
+    background-image: url('/__ssobj/static/hmlp-men-banner-mobile-170819.jpg');
     @include mq(tablet) {
-        background-image: url('/__ssobj/static/hmlp-healthy-men-banner2.jpg');
+        background-image: url('/__ssobj/static/hmlp-men-banner-170819.jpg');
     }
 
     .hmlp-sample-banner__body {
