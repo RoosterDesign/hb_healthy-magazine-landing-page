@@ -149,13 +149,13 @@
                 magazine: "Healthy For Men"
             },
             product: {
-                sku: "",
-                prodId: "",
-                title: "",
-                price: 2.99,
-                url: "",
-                coverImage: "/__ssobj/static/hmlp-men-cover-170819.jpg", // replace
-                mobileImage: "/__ssobj/static/hmlp-men-prod-170819.png" // replace
+                sku: "010313",
+                prodId: "60010313",
+                title: "Healthy for Men Issue 84: Expert Health",
+                price: 3.75,
+                url: "/shop/product/healthy-for-men-issue-84-expert-health-60010313?skuid=010313",
+                coverImage: "/__ssobj/static/hmlp-men-cover-170819.jpg",
+                mobileImage: "/__ssobj/static/hmlp-men-prod-170819.png"
             },
             talkingAboutBullets: [ "How Bear Grylls stays tough", "Rest days: the truth", "Bedtime snacking. Do or don\\’t?", "Fat shredding workout", "Healthy, tasty and affordable recipes", "Beat \\‘male menopause\\’" ]
         };
