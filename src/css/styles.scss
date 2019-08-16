@@ -493,8 +493,10 @@ body.hmlp-sticky-nav--fixed {
 }
 
 #hmlp-photo-tom-rowley {
-    background-image: url('/__ssobj/static/hmlp-tom-rowley-mobile.jpg');
+    display: none;
+    // background-image: url('/__ssobj/static/hmlp-tom-rowley-mobile.jpg');
     @include mq(tablet) {
+        display: block;
         // background-image: url('/__ssobj/static/hmlp-tom-rowley.jpg');
         background-image: url('/__ssobj/static/hmlp-men-free-goodies.png');
     }

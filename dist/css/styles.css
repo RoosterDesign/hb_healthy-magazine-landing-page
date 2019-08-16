@@ -184,7 +184,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 #hmlp-photo-tom-rowley {
-  background-image: url("/__ssobj/static/hmlp-tom-rowley-mobile.jpg");
+  display: none;
 }
 
 .hmlp-block-product {
@@ -618,6 +618,7 @@ body > div[role="main"] > div:nth-of-type(1) {
     background-image: url("/__ssobj/static/hmlp-ellie-hughes.jpg");
   }
   #hmlp-photo-tom-rowley {
+    display: block;
     background-image: url("/__ssobj/static/hmlp-men-free-goodies.png");
   }
   .hmlp-block-product {
