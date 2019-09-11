@@ -18,10 +18,7 @@ sass.compiler = require('node-sass');
 gulp.task('sass', function () {
 
     const plugins = [
-        require('autoprefixer')({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }),
+        require('autoprefixer'),
         require("css-mqpacker")({sort: true})
     ];
 
@@ -51,8 +48,12 @@ gulp.task('inject', function() {
         var style = fs.readFileSync('./dist/css/styles.css', 'utf8');
         return '<style>\n' + style + '\n</style>';
     }))
-    .pipe(replace(/<script src="scripts.js"[^>]*>/, function(s) {
-        var script = fs.readFileSync('./dist/js/scripts.js');
+    .pipe(replace(/<script src="com.js"[^>]*>/, function(s) {
+        var script = fs.readFileSync('./dist/js/com.js');
+        return '<script>\n' + script + '\n</script>';
+    }))
+    .pipe(replace(/<script src="ie.js"[^>]*>/, function(s) {
+        var script = fs.readFileSync('./dist/js/ie.js');
         return '<script>\n' + script + '\n</script>';
     }))
     .pipe(gulp.dest('./dist/html'));

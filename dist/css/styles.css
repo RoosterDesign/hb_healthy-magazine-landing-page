@@ -28,7 +28,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 .hmlp-hero {
-  background: url("/__ssobj/static/hero-170819-mobile.png") 50% 50%;
+  background: url("/__ssobj/static/hero-oct-nov-19-mobile.jpg") 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: -8px;
@@ -172,7 +172,7 @@ body > div[role="main"] > div:nth-of-type(1) {
   background-size: cover;
   border-radius: 50%;
   -webkit-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
   display: block;
   height: 65px;
   margin: 0 15px 0 0;
@@ -194,7 +194,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 .hmlp-block-product__cover {
   border-radius: 1px;
   -webkit-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
   display: block;
   height: auto;
   margin: 0 auto;
@@ -228,22 +228,22 @@ body > div[role="main"] > div:nth-of-type(1) {
 @-webkit-keyframes quick-order-loading {
   0% {
     -webkit-transform: rotate(0);
-    transform: rotate(0);
+            transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes quick-order-loading {
   0% {
     -webkit-transform: rotate(0);
-    transform: rotate(0);
+            transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -277,14 +277,14 @@ body > div[role="main"] > div:nth-of-type(1) {
   background: #4d8071;
   bottom: -1px;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   position: relative;
   right: -1px;
 }
 
 .hmlp-quick-add--in-progress:before {
   -webkit-animation: quick-order-loading 1500ms infinite linear;
-  animation: quick-order-loading 1500ms infinite linear;
+          animation: quick-order-loading 1500ms infinite linear;
   border: 3px solid transparent;
   border-left-color: #fff;
   border-radius: 50%;
@@ -355,7 +355,7 @@ body > div[role="main"] > div:nth-of-type(1) {
   background: #EC803A;
   border: 1px solid #D26823;
   -webkit-box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.25);
   color: #fff;
   display: block;
   font-size: 18px;
@@ -378,7 +378,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 #hmlp-healthy-banner {
-  background-image: url("/__ssobj/static/hmlp-healthy-banner-270719-mobile.jpg");
+  background-image: url("/__ssobj/static/hmlp-healthy-banner-oct-nov-19-mobile.jpg");
 }
 
 #hmlp-healthy-for-men-banner {
@@ -407,7 +407,7 @@ body > div[role="main"] > div:nth-of-type(1) {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 100%;
 }
 
@@ -415,7 +415,7 @@ body > div[role="main"] > div:nth-of-type(1) {
   background: #fff;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   display: block;
   height: 40px;
@@ -434,7 +434,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 
 .hmlp-modal__close:hover {
   -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .hmlp-modal > div {
@@ -507,13 +507,13 @@ body > div[role="main"] > div:nth-of-type(1) {
     padding: 48px 24px;
   }
   .hmlp-hero {
-    background-image: url("/__ssobj/static/hero-170819.png");
+    background-image: url("/__ssobj/static/hero-oct-nov-19.jpg");
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -561,13 +561,13 @@ body > div[role="main"] > div:nth-of-type(1) {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0;
   }
   .hmlp-block__intro {
     -webkit-box-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
+        -ms-flex: 3;
+            flex: 3;
     padding: 0 30px 30px 0;
     position: relative;
   }
@@ -599,8 +599,8 @@ body > div[role="main"] > div:nth-of-type(1) {
   }
   .hmlp-block-editor {
     -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     padding: 50px 30px 30px 0;
     text-align: center;
   }
@@ -625,8 +625,8 @@ body > div[role="main"] > div:nth-of-type(1) {
     border-left: 1px solid #e3e8e8;
     display: inline-block;
     -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     padding: 0 0 30px 30px;
     text-align: center;
   }
@@ -649,14 +649,14 @@ body > div[role="main"] > div:nth-of-type(1) {
   .hmlp-talking-about {
     border-top: 1px solid #e3e8e8;
     -webkit-box-flex: 1;
-    -ms-flex: 1 1 100%;
-    flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
     padding: 24px 0 0;
   }
   .hmlp-talking-about-list {
     -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
     margin-bottom: 0;
   }
   .hmlp-talking-about-list__item {
@@ -684,7 +684,7 @@ body > div[role="main"] > div:nth-of-type(1) {
     margin: 0;
   }
   #hmlp-healthy-banner {
-    background-image: url("/__ssobj/static/hmlp-healthy-banner-270719.jpg");
+    background-image: url("/__ssobj/static/hmlp-healthy-banner-oct-nov-19.jpg");
   }
   #hmlp-healthy-banner .hmlp-sample-banner__body {
     float: right;
@@ -746,8 +746,8 @@ body > div[role="main"] > div:nth-of-type(1) {
   }
   .hmlp-block__intro {
     -webkit-box-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
+        -ms-flex: 2;
+            flex: 2;
     max-width: 680px;
     min-width: 680px;
     padding-right: 40px;
@@ -799,8 +799,8 @@ body > div[role="main"] > div:nth-of-type(1) {
   }
   .hmlp-block-editor {
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
