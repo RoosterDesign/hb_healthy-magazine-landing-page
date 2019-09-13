@@ -444,8 +444,6 @@ body.hmlp-sticky-nav--fixed {
         margin: 16px 0 24px;
     }    
     @include mq(tablet) {
-        // align-items: center;
-        // display: flex;
         flex: 1;
         padding: 50px 30px 30px 0;
         text-align: center;
@@ -488,7 +486,18 @@ body.hmlp-sticky-nav--fixed {
 #hmlp-photo-ellie-hughes {
     background-image: url('/__ssobj/static/hmlp-ellie-hughes-mobile.jpg');
     @include mq(tablet) {
-        background-image: url('/__ssobj/static/hmlp-ellie-hughes.jpg');
+        // background-image: url('/__ssobj/static/hmlp-ellie-hughes.jpg');
+        background-image: url('/__ssobj/static/hmlp-healthy-awards-2019.gif');
+    }
+}
+
+.hmlp-award-logo {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 150px;    
+    @include mq(tablet) {
+        display: none;
     }
 }
 

@@ -184,6 +184,13 @@ body > div[role="main"] > div:nth-of-type(1) {
   background-image: url("/__ssobj/static/hmlp-ellie-hughes-mobile.jpg");
 }
 
+.hmlp-award-logo {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 150px;
+}
+
 #hmlp-photo-tom-rowley {
   display: none;
 }
@@ -616,7 +623,10 @@ body > div[role="main"] > div:nth-of-type(1) {
     width: 100%;
   }
   #hmlp-photo-ellie-hughes {
-    background-image: url("/__ssobj/static/hmlp-ellie-hughes.jpg");
+    background-image: url("/__ssobj/static/hmlp-healthy-awards-2019.gif");
+  }
+  .hmlp-award-logo {
+    display: none;
   }
   #hmlp-photo-tom-rowley {
     display: block;
@@ -923,17 +933,17 @@ $1
                 magazine: "Healthy"
             },
             product: {
-                sku: "",
-                prodId: "",
-                title: "",
-                price: 2.99,
-                url: "",
+                sku: "010306",
+                prodId: "60010306",
+                title: "Healthy Magazine Issue 153: The Nutrition Issue",
+                price: 4.45,
+                url: "/shop/product/healthy-magazine-issue-153-the-nutrition-issue-60010306",
                 coverImage: "/__ssobj/static/hmlp-healthy-cover-oct-nov-19.jpg",
                 mobileImage: "/__ssobj/static/hmlp-healthy-prod-oct-nov-19-mobile.jpg"
             },
             talkingAboutBullets: [ "Managing chronic pain", "Prebiotic supplements", "Fertility", "Organic beauty", "Kettlebell swings", "Mineral skincare" ]
         };
-        var healthyHtml = '<div class="hmlp-block" id="healthy"><div class="hmlp-block__intro"><img src="' + healthyContent.logo + '" class="hmlp-block__logo" title="Healthy Magazine"><i class="fas fa-quote-left hmlp-block__speech-mark"></i><blockquote class="hmlp-block__intro-quote">' + healthyContent.quote + '</blockquote><p class="hmlp-block__intro-editor"><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-product"><a href="' + healthyContent.product.url + '" title="' + healthyContent.product.title + '"><img src="' + healthyContent.product.coverImage + '" class="hmlp-block-product__cover" title="Healthy Magazine"></a><p class="hmlp-block-product__price">&euro;' + healthyContent.product.price + '</p><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy Magazine"></div>';
+        var healthyHtml = '<div class="hmlp-block" id="healthy"><div class="hmlp-block__intro"><img src="' + healthyContent.logo + '" class="hmlp-block__logo" title="Healthy Magazine"><i class="fas fa-quote-left hmlp-block__speech-mark"></i><blockquote class="hmlp-block__intro-quote">' + healthyContent.quote + '</blockquote><p class="hmlp-block__intro-editor"><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><img src="/__ssobj/static/hmlp-healthy-awards-2019.gif" class="hmlp-award-logo" /><div class="hmlp-block-product"><a href="' + healthyContent.product.url + '" title="' + healthyContent.product.title + '"><img src="' + healthyContent.product.coverImage + '" class="hmlp-block-product__cover" title="Healthy Magazine"></a><p class="hmlp-block-product__price">&euro;' + healthyContent.product.price + '</p><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy Magazine"></div>';
         healthyHtml += '<div class="hmlp-talking-about"><h3 class="hmlp-block__subtitle">' + talkingAboutTitle + '</h3><ul class="hmlp-talking-about-list">';
         healthyContent.talkingAboutBullets.forEach(function(el) {
             return healthyHtml += '<li class="hmlp-talking-about-list__item">' + el + "</li>";

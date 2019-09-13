@@ -183,6 +183,13 @@ body > div[role="main"] > div:nth-of-type(1) {
   background-image: url("/__ssobj/static/hmlp-ellie-hughes-mobile.jpg");
 }
 
+.hmlp-award-logo {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 150px;
+}
+
 #hmlp-photo-tom-rowley {
   display: none;
 }
@@ -615,7 +622,10 @@ body > div[role="main"] > div:nth-of-type(1) {
     width: 100%;
   }
   #hmlp-photo-ellie-hughes {
-    background-image: url("/__ssobj/static/hmlp-ellie-hughes.jpg");
+    background-image: url("/__ssobj/static/hmlp-healthy-awards-2019.gif");
+  }
+  .hmlp-award-logo {
+    display: none;
   }
   #hmlp-photo-tom-rowley {
     display: block;
