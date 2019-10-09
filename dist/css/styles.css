@@ -28,7 +28,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 .hmlp-hero {
-  background: url("/__ssobj/static/hero-oct-nov-19-mobile.jpg") 50% 50%;
+  background: url("/__ssobj/static/hero-mobile-111019.jpg") 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: -8px;
@@ -192,6 +192,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 
 #hmlp-photo-tom-rowley {
   display: none;
+  background-image: url("/__ssobj/static/hmlp-tom-rowley-mobile.jpg");
 }
 
 .hmlp-block-product {
@@ -393,7 +394,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 #hmlp-healthy-for-men-banner {
-  background-image: url("/__ssobj/static/hmlp-men-banner-mobile-170819.jpg");
+  background-image: url("/__ssobj/static/hmlp-men-banner-mobile-111019.jpg");
 }
 
 .hmlp-modal-wrap {
@@ -518,7 +519,7 @@ body > div[role="main"] > div:nth-of-type(1) {
     padding: 48px 24px;
   }
   .hmlp-hero {
-    background-image: url("/__ssobj/static/hero-oct-nov-19.jpg");
+    background-image: url("/__ssobj/static/hero-111019.jpg");
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -535,7 +536,7 @@ body > div[role="main"] > div:nth-of-type(1) {
   .hmlp-hero:before {
     background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0)), color-stop(60%, rgba(0, 0, 0, 0.6)));
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.6) 60%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=1);
   }
   .hmlp-hero__content {
     padding: 0 40px;
@@ -633,7 +634,7 @@ body > div[role="main"] > div:nth-of-type(1) {
   }
   #hmlp-photo-tom-rowley {
     display: block;
-    background-image: url("/__ssobj/static/hmlp-men-free-goodies.png");
+    background-image: url("/__ssobj/static/hmlp-tom-rowley.jpg");
   }
   .hmlp-block-product {
     border-left: 1px solid #e3e8e8;
@@ -704,7 +705,7 @@ body > div[role="main"] > div:nth-of-type(1) {
     float: right;
   }
   #hmlp-healthy-for-men-banner {
-    background-image: url("/__ssobj/static/hmlp-men-banner-170819.jpg");
+    background-image: url("/__ssobj/static/hmlp-men-banner-111019.jpg");
   }
   #hmlp-healthy-for-men-banner .hmlp-sample-banner__body {
     float: right;

@@ -1,4 +1,3 @@
-
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //  Breakpoints
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -20,23 +19,24 @@ $lightGrey: #F7F7F7;
 //  Mixins
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$breakpoints: (
-    mobile-lg: 375px,
+$breakpoints: (mobile-lg: 375px,
     mobile-xlg: 414px,
     tablet: 768px,
     tablet-lg: 992px,
     desktop: 1250px,
     desktop-md: 1500px,
-    desktop-lg: 1920px
-);
+    desktop-lg: 1920px);
 
 @mixin mq($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
         $breakpoint-value: map-get($breakpoints, $breakpoint);
+
         @media (min-width: $breakpoint-value) {
             @content;
         }
-    } @else {
+    }
+
+    @else {
         @warn 'Invalid breakpoint: #{$breakpoint}.';
     }
 }
@@ -69,7 +69,7 @@ $breakpoints: (
 }
 
 
-body > div[role="main"] > div:nth-of-type(1) {
+body>div[role="main"]>div:nth-of-type(1) {
     display: none;
 }
 
@@ -83,7 +83,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .hmlp-hero {
-    background: url('/__ssobj/static/hero-oct-nov-19-mobile.jpg') 50% 50%;
+    background: url('/__ssobj/static/hero-mobile-111019.jpg') 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -8px;
@@ -91,13 +91,15 @@ body > div[role="main"] > div:nth-of-type(1) {
     padding: 40px 16px;
     position: relative;
     text-align: center;
+
     @include mq(tablet) {
         margin-left: 0;
         margin-right: 0;
         padding: 48px 24px;
     }
+
     @include mq(tablet) {
-        background-image: url('/__ssobj/static/hero-oct-nov-19.jpg');
+        background-image: url('/__ssobj/static/hero-111019.jpg');
         align-items: center;
         justify-content: flex-end;
         display: flex;
@@ -107,27 +109,30 @@ body > div[role="main"] > div:nth-of-type(1) {
     }
 
     &:before {
-        background: rgba(0,0,0,.5);
+        background: rgba(0, 0, 0, .5);
         content: '';
         height: 100%;
         left: 0;
         position: absolute;
         top: 0;
         width: 100%;
+
         @include mq(tablet) {
-            background: -moz-linear-gradient(left, rgba(0,0,0,0) 30%, rgba(0,0,0,.6) 60%);
-            background: -webkit-linear-gradient(left, rgba(0,0,0,0) 30%,rgba(0,0,0,.6) 60%);
-            background: linear-gradient(to right, rgba(0,0,0,0) 30%,rgba(0,0,0,.6) 60%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 );
+            background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, .6) 60%);
+            background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, .6) 60%);
+            background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, .6) 60%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=1);
         }
     }
 
     &__content {
         position: relative;
+
         @include mq(tablet) {
             padding: 0 40px;
             width: 50%;
         }
+
         @include mq(desktop) {
             padding: 0 80px;
         }
@@ -144,20 +149,23 @@ body > div[role="main"] > div:nth-of-type(1) {
         font-weight: bold;
         line-height: 30px;
         margin-bottom: 10px;
+
         @include mq(tablet) {
             font-size: 33px;
             line-height: 42px;
         }
+
         @include mq(desktop) {
             font-size: 36px;
             line-height: 46px;
-            margin-bottom: 15px; 
+            margin-bottom: 15px;
         }
     }
 
     &__body {
         font-size: 16px;
         line-height: 22px;
+
         @include mq(tablet) {
             font-size: 20px;
             line-height: 28px;
@@ -175,9 +183,11 @@ body > div[role="main"] > div:nth-of-type(1) {
 .hmlp-nav-wrap {
     background: #3BA496;
     margin: 0 -8px 30px;
+
     @media #{$mq-mobile} {
         height: 44px;
     }
+
     @include mq(tablet) {
         height: 60px;
         margin: 0 0 60px;
@@ -214,6 +224,7 @@ body.hmlp-sticky-nav--fixed {
         margin: 0;
         padding: 0 10px;
         position: relative;
+
         @include mq(tablet) {
             padding: 0 1px;
         }
@@ -229,9 +240,10 @@ body.hmlp-sticky-nav--fixed {
         right: 0;
         top: 18px;
         width: 1px;
+
         @include mq(tablet) {
-           height: 15px;
-           top: 23px;
+            height: 15px;
+            top: 23px;
         }
     }
 
@@ -252,11 +264,13 @@ body.hmlp-sticky-nav--fixed {
         padding: 14px 10px 0;
         text-decoration: none !important;
         text-transform: uppercase;
+
         @media only screen and (min-width: 320px) {
             font-size: 14px;
             padding-left: 15px;
             padding-right: 15px;
         }
+
         @include mq(tablet) {
             font-size: 18px;
             height: 60px;
@@ -267,7 +281,7 @@ body.hmlp-sticky-nav--fixed {
 
     &__link:hover {
         @include mq(desktop) {
-           background: darken(#3BA496, 5%);
+            background: darken(#3BA496, 5%);
         }
     }
 
@@ -280,12 +294,14 @@ body.hmlp-sticky-nav--fixed {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .hmlp-block {
+
     // background: $lightGrey;
     // padding: 24px;
     @media #{$mq-mobile} {
         padding-left: 8px;
         padding-right: 8px;
     }
+
     @include mq(tablet) {
         display: flex;
         flex-wrap: wrap;
@@ -299,6 +315,7 @@ body.hmlp-sticky-nav--fixed {
             padding: 0 30px 30px 0;
             position: relative;
         }
+
         @include mq(desktop) {
             flex: 2;
             max-width: 680px;
@@ -311,17 +328,20 @@ body.hmlp-sticky-nav--fixed {
     &__intro-quote {
         margin: 0;
         padding: 0;
+
         @include mq(tablet) {
             padding-top: 20px;
         }
+
         // @include mq(desktop) {
         //     padding-top: 30px;
         // }
     }
 
     &__intro-quote p {
-        font-style: italic;        
+        font-style: italic;
         margin: 0 0 15px;
+
         @include mq(tablet) {
             font-size: 19px;
             line-height: 1.6;
@@ -335,24 +355,25 @@ body.hmlp-sticky-nav--fixed {
 
     &__intro-editor {
         display: none;
+
         @include mq(tablet) {
             display: block;
         }
     }
 
     // &__intro:before {
-        // @include mq(tablet) {
-            // color: #dcdcdc;
-            // content: "\\201C";
-            // display: block;
-            // font-size: 300px;
-            // left: -20px;
-            // left: -35px;
-            // opacity: .4;
-            // position: absolute;
-            // top: -120px;
-            // top: -20px;
-        // }
+    // @include mq(tablet) {
+    // color: #dcdcdc;
+    // content: "\\201C";
+    // display: block;
+    // font-size: 300px;
+    // left: -20px;
+    // left: -35px;
+    // opacity: .4;
+    // position: absolute;
+    // top: -120px;
+    // top: -20px;
+    // }
     // }
 
     &__speech-mark {
@@ -363,16 +384,17 @@ body.hmlp-sticky-nav--fixed {
         line-height: 1;
         margin: -10px 15px 0 0;
         overflow: hidden;
+
         @include mq(tablet) {
             font-size: 60px; //
             margin-top: 10px;
-            margin-right: 20px
-            // height: 50px;
-            // padding-right: 5px;
+            margin-right: 20px // height: 50px;
+                // padding-right: 5px;
         }
+
         // @include mq(desktop) {
-            // height: 80px;
-            // margin-top: 5px;
+        // height: 80px;
+        // margin-top: 5px;
         // }
     }
 
@@ -398,6 +420,7 @@ body.hmlp-sticky-nav--fixed {
         margin-bottom: 15px;
         max-width: 175px;
         width: 100%;
+
         @include mq(tablet) {
             margin-bottom: 0;
             max-width: 225px;
@@ -405,13 +428,13 @@ body.hmlp-sticky-nav--fixed {
     }
 
     // p {
-        // font-size: 16px;
-        // line-height: 1.4;
-        // margin: 0 0 15px;
-        // @include mq(tablet) {
-        //     font-size: 18px;
-        //     line-height: 27px;
-        // }
+    // font-size: 16px;
+    // line-height: 1.4;
+    // margin: 0 0 15px;
+    // @include mq(tablet) {
+    //     font-size: 18px;
+    //     line-height: 27px;
+    // }
     // }
 
     // p:last-child {
@@ -422,6 +445,7 @@ body.hmlp-sticky-nav--fixed {
         font-size: 20px;
         line-height: 1;
         margin: 0 0 16px;
+
         @include mq(tablet) {
             font-size: 27px;
             line-height: 50px;
@@ -432,6 +456,7 @@ body.hmlp-sticky-nav--fixed {
 
 #healthy-for-men {
     margin-top: 40px;
+
     @include mq(tablet) {
         margin-top: 60px;
     }
@@ -442,15 +467,18 @@ body.hmlp-sticky-nav--fixed {
         align-items: center;
         display: flex;
         margin: 16px 0 24px;
-    }    
+    }
+
     @include mq(tablet) {
         flex: 1;
         padding: 50px 30px 30px 0;
         text-align: center;
     }
+
     @include mq(tablet-lg) {
         padding-top: 75px;
     }
+
     @include mq(desktop) {
         padding-right: 40px;
         padding-bottom: 40px;
@@ -467,11 +495,12 @@ body.hmlp-sticky-nav--fixed {
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 50%;
-        box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.10);
+        box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.10);
         display: block;
         height: 65px;
         margin: 0 15px 0 0;
         width: 65px;
+
         @include mq(tablet) {
             height: 0;
             margin: 0 auto;
@@ -481,10 +510,11 @@ body.hmlp-sticky-nav--fixed {
         }
     }
 
-}    
+}
 
 #hmlp-photo-ellie-hughes {
     background-image: url('/__ssobj/static/hmlp-ellie-hughes-mobile.jpg');
+
     @include mq(tablet) {
         // background-image: url('/__ssobj/static/hmlp-ellie-hughes.jpg');
         background-image: url('/__ssobj/static/hmlp-healthy-awards-2019.gif');
@@ -495,7 +525,8 @@ body.hmlp-sticky-nav--fixed {
     display: block;
     height: auto;
     margin: 0 auto;
-    max-width: 150px;    
+    max-width: 150px;
+
     @include mq(tablet) {
         display: none;
     }
@@ -503,16 +534,18 @@ body.hmlp-sticky-nav--fixed {
 
 #hmlp-photo-tom-rowley {
     display: none;
-    // background-image: url('/__ssobj/static/hmlp-tom-rowley-mobile.jpg');
+    background-image: url('/__ssobj/static/hmlp-tom-rowley-mobile.jpg');
+
     @include mq(tablet) {
         display: block;
-        // background-image: url('/__ssobj/static/hmlp-tom-rowley.jpg');
-        background-image: url('/__ssobj/static/hmlp-men-free-goodies.png');
+        background-image: url('/__ssobj/static/hmlp-tom-rowley.jpg');
+        // background-image: url('/__ssobj/static/hmlp-men-free-goodies.png');
     }
 }
 
 .hmlp-block-product {
     display: none;
+
     @include mq(tablet) {
         border-left: 1px solid #e3e8e8;
         display: inline-block;
@@ -520,17 +553,19 @@ body.hmlp-sticky-nav--fixed {
         padding: 0 0 30px 30px;
         text-align: center;
     }
+
     @include mq(desktop) {
         padding: 0 20px 40px 40px;
     }
 
     &__cover {
         border-radius: 1px;
-        box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.10);
+        box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.10);
         display: block;
         height: auto;
         margin: 0 auto;
         max-width: 150px;
+
         @include mq(desktop) {
             max-width: 180px;
         }
@@ -544,6 +579,7 @@ body.hmlp-sticky-nav--fixed {
         line-height: 1;
         margin: 15px auto 12px;
         text-align: center;
+
         @include mq(tablet) {
             font-size: 18px;
         }
@@ -551,6 +587,7 @@ body.hmlp-sticky-nav--fixed {
 
     &__price--mobile {
         display: block;
+
         @include mq(tablet) {
             display: none;
         }
@@ -566,6 +603,7 @@ body.hmlp-sticky-nav--fixed {
 
 .hmlp-product-img-wrap {
     margin: 24px -16px 32px;
+
     @include mq(tablet) {
         display: none;
     }
@@ -585,10 +623,11 @@ body.hmlp-sticky-nav--fixed {
 
 @keyframes quick-order-loading {
     0% {
-        transform:rotate(0)
+        transform: rotate(0)
     }
+
     100% {
-        transform:rotate(360deg)
+        transform: rotate(360deg)
     }
 }
 
@@ -607,6 +646,7 @@ body.hmlp-sticky-nav--fixed {
     text-decoration: none;
     transition: all .3s ease-out;
     width: 215px;
+
     @include mq(tablet) {
         display: block;
         width: 200px;
@@ -614,6 +654,7 @@ body.hmlp-sticky-nav--fixed {
 
     &--mobile {
         display: block;
+
         @include mq(tablet) {
             display: none;
         }
@@ -632,12 +673,12 @@ body.hmlp-sticky-nav--fixed {
     }
 
     &--in-progress:before {
-        animation:quick-order-loading 1500ms infinite linear;
+        animation: quick-order-loading 1500ms infinite linear;
         border: 3px solid transparent;
-        border-left-color:#fff;
+        border-left-color: #fff;
         border-radius: 50%;
-        content:'';
-        display:inline-block;
+        content: '';
+        display: inline-block;
         height: 20px;
         position: relative;
         top: 0;
@@ -661,6 +702,7 @@ body.hmlp-sticky-nav--fixed {
         padding-left: 8px;
         padding-right: 8px;
     }
+
     @include mq(tablet) {
         border-top: 1px solid #e3e8e8;
         flex: 1 1 100%;
@@ -673,6 +715,7 @@ body.hmlp-sticky-nav--fixed {
     font-size: 0;
     margin: 0 0 16px 0;
     padding: 0;
+
     @include mq(tablet) {
         column-count: 3;
         margin-bottom: 0;
@@ -683,10 +726,12 @@ body.hmlp-sticky-nav--fixed {
         line-height: 1.4;
         margin: 0 0 8px 1em;
         padding: 0;
+
         @include mq(tablet) {
             // padding-right: 56px;
             padding-right: 30px;
         }
+
         @include mq(tablet) {
             // font-size: 18px;
             // line-height: 27px;
@@ -717,25 +762,28 @@ body.hmlp-sticky-nav--fixed {
     padding: 50px 0;
     position: relative;
     text-align: center;
+
     @include mq(tablet) {
         margin: 40px 0 0;
         min-height: 250px;
         padding: 50px 50px 0 50px;
         text-align: left;
     }
+
     @include mq(desktop) {
         padding-left: 70px;
         padding-right: 70px;
     }
 
     &:before {
-        background: rgba(0,0,0,.5);
+        background: rgba(0, 0, 0, .5);
         content: '';
         height: 100%;
         left: 0;
         position: absolute;
         top: 0;
         width: 100%;
+
         @include mq(tablet) {
             display: none;
         }
@@ -745,35 +793,39 @@ body.hmlp-sticky-nav--fixed {
         margin: 0 auto;
         position: relative;
         width: 250px;
+
         @include mq(tablet) {
             margin: 0;
             width: 350px;
         }
+
         @include mq(desktop) {
             width: 390px;
         }
     }
-    
+
     &__body p {
         color: #fff;
         font-size: 21px;
         font-weight: bold;
         line-height: 29px;
         margin: 0 0 10px;
+
         @include mq(tablet) {
             font-size: 28px;
             line-height: 1.3;
-            margin-bottom: 20px;            
+            margin-bottom: 20px;
         }
+
         @include mq(desktop) {
-            font-size: 33px;           
+            font-size: 33px;
         }
     }
 
     &__cta {
         background: #EC803A;
         border: 1px solid #D26823;
-        box-shadow: 1px 2px 3px 0 rgba(0,0,0,0.25);
+        box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.25);
         color: #fff;
         display: block;
         font-size: 18px;
@@ -784,6 +836,7 @@ body.hmlp-sticky-nav--fixed {
         text-decoration: none !important;
         transition: all .3s ease-out;
         width: 215px;
+
         @include mq(tablet) {
             margin: 0;
         }
@@ -805,6 +858,7 @@ body.hmlp-sticky-nav--fixed {
 
 #hmlp-healthy-banner {
     background-image: url('/__ssobj/static/hmlp-healthy-banner-oct-nov-19-mobile.jpg');
+
     @include mq(tablet) {
         background-image: url('/__ssobj/static/hmlp-healthy-banner-oct-nov-19.jpg');
     }
@@ -818,9 +872,10 @@ body.hmlp-sticky-nav--fixed {
 }
 
 #hmlp-healthy-for-men-banner {
-    background-image: url('/__ssobj/static/hmlp-men-banner-mobile-170819.jpg');
+    background-image: url('/__ssobj/static/hmlp-men-banner-mobile-111019.jpg');
+
     @include mq(tablet) {
-        background-image: url('/__ssobj/static/hmlp-men-banner-170819.jpg');
+        background-image: url('/__ssobj/static/hmlp-men-banner-111019.jpg');
     }
 
     .hmlp-sample-banner__body {
@@ -840,7 +895,7 @@ body.hmlp-sticky-nav--fixed {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .hmlp-modal-wrap {
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, .8);
     display: none;
     height: 100%;
     left: 0;
@@ -849,6 +904,7 @@ body.hmlp-sticky-nav--fixed {
     top: 0;
     width: 100%;
     z-index: 999999;
+
     @include mq(tablet) {
         padding: 50px;
     }
@@ -865,6 +921,7 @@ body.hmlp-sticky-nav--fixed {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
+
     @include mq(tablet) {
         height: 100%;
         max-width: none;
@@ -873,7 +930,7 @@ body.hmlp-sticky-nav--fixed {
     &__close {
         background: #fff;
         border-radius: 50%;
-        box-shadow: 0 0 10px 5px rgba(0,0,0,.1);
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, .1);
         cursor: pointer;
         display: block;
         height: 40px;
@@ -885,6 +942,7 @@ body.hmlp-sticky-nav--fixed {
         right: -10px;
         top: -10px;
         width: 40px;
+
         @include mq(tablet) {
             right: -15px;
             top: -15px;
@@ -892,10 +950,10 @@ body.hmlp-sticky-nav--fixed {
     }
 
     &__close:hover {
-        box-shadow: 0 0 10px 5px rgba(0,0,0,.3);
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3);
     }
 
-    &> div {
+    &>div {
         height: 100% !important;
         width: 100% !important;
     }
@@ -914,6 +972,7 @@ body.hmlp-sticky-nav--fixed {
     min-height: 120px;
     position: relative;
     text-decoration: none !important;
+
     @include mq(tablet) {
         margin: 20px 0 0;
     }
@@ -925,12 +984,15 @@ body.hmlp-sticky-nav--fixed {
         margin: 0;
         padding: 15px 15px 40px;
         text-align: right;
+
         @include mq(mobile-lg) {
             padding: 20px;
         }
+
         @include mq(mobile-xlg) {
             padding-left: 50px;
         }
+
         @include mq(tablet) {
             font-size: 21px;
             padding: 40px 0 40px 50px;
@@ -943,6 +1005,7 @@ body.hmlp-sticky-nav--fixed {
         font-size: 20px;
         font-weight: bold;
         margin-top: 8px;
+
         @include mq(tablet) {
             font-size: 33px;
             margin-top: 18px;
@@ -955,17 +1018,20 @@ body.hmlp-sticky-nav--fixed {
         left: -25px;
         position: absolute;
         top: 65px;
+
         @include mq(mobile-lg) {
             font-size: 160px;
             left: -25px;
             top: 45px;
         }
+
         @include mq(tablet) {
             font-size: 300px;
             left: auto;
             right: 24px;
             top: 35px;
         }
+
         @include mq(desktop) {
             top: 0;
         }

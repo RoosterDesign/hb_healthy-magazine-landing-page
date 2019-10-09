@@ -141,7 +141,7 @@
     function initHealthyMen() {
         var healthyMenContent = {
             logo: "/__ssobj/static/hmlp-healthy-men-logo.png",
-            quote: "<p>Discover the importance and reality of going for a health check and why you shouldn\\’t be scared to visit your GP. We detail what to expect your prostate is being inspected, to what actually happens when being tested for diabetes.</p><p>What\\’s Jason Momoa\\’s blueprint for health? Find out inside (Psst, it includes beer!)</p><p>Interested in supplementing your diet with protein bars? We discuss the best ones and which type to eat, when. PLUS grab a FREE PHD Smart Plant protein bar and a SIS Surge Gel with every issue.</p>",
+            quote: "<p>We get the scoop on how Michael B Jordan trains like a champion for his film roles including, Creed, Black Panther and the new film, Just Mercy. Whether you\\’re looking to build strength or, to look and feel better, this issue has got all the tips and advice you need whether you\\’re 25 or 55. Discover how to strengthen your winter defences with our guide on how your nutrition can boost immunity.</p><p>PLUS, Save with exclusive vouchers inside including half price Grenade Killa Ketones and Optimum Nutrition BCAA powder.</p>",
             editor: {
                 id: "tom-rowley",
                 name: "Tom Rowley",
@@ -149,17 +149,17 @@
                 magazine: "Healthy For Men"
             },
             product: {
-                sku: "010313",
-                prodId: "60010313",
-                title: "Healthy for Men Issue 84: Expert Health",
+                sku: "",
+                prodId: "",
+                title: "",
                 price: 2.49,
-                url: "/shop/product/healthy-for-men-issue-84-expert-health-60010313?skuid=010313",
-                coverImage: "/__ssobj/static/hmlp-men-cover-170819.jpg",
-                mobileImage: "/__ssobj/static/hmlp-men-prod-170819.png"
+                url: "",
+                coverImage: "/__ssobj/static/hmlp-healthy-men-cover-111019.jpg",
+                mobileImage: "/__ssobj/static/hmlp-healthy-men-prod-111019.jpg"
             },
-            talkingAboutBullets: [ "How Bear Grylls stays tough", "Rest days: the truth", "Bedtime snacking. Do or don\\’t?", "Fat shredding workout", "Healthy, tasty and affordable recipes", "Beat \\‘male menopause\\’" ]
+            talkingAboutBullets: [ "Being an ace Dad", "Mastering your sex drive", "Greener grooming", "Handling hangovers", "Tackling loneliness", "Training with your tribe" ]
         };
-        var healthyMenHtml = '<div class="hmlp-block" id="healthy-for-men"><div class="hmlp-block__intro"><img src="' + healthyMenContent.logo + '" class="hmlp-block__logo" title="Healthy For Men Magazine"><i class="fas fa-quote-left hmlp-block__speech-mark"></i><blockquote class="hmlp-block__intro-quote">' + healthyMenContent.quote + '</blockquote></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyMenContent.editor.id + '" class="hmlp-block-editor__photo"></div></div><div class="hmlp-block-product"><a href="' + healthyMenContent.product.url + '" title="' + healthyMenContent.product.title + '"><img src="' + healthyMenContent.product.coverImage + '" class="hmlp-block-product__cover" title="Healthy For Men Magazine"></a><p class="hmlp-block-product__price">&pound;' + healthyMenContent.product.price + '</p><span class="hmlp-quick-add hmlp-quick-add--nostock">Out of stock</span></div><div class="hmlp-product-img-wrap"><img src="' + healthyMenContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy For Men Magazine"></div>';
+        var healthyMenHtml = '<div class="hmlp-block" id="healthy-for-men"><div class="hmlp-block__intro"><img src="' + healthyMenContent.logo + '" class="hmlp-block__logo" title="Healthy For Men Magazine"><i class="fas fa-quote-left hmlp-block__speech-mark"></i><blockquote class="hmlp-block__intro-quote">' + healthyMenContent.quote + '</blockquote><p class="hmlp-block__intro-editor"><strong>' + healthyMenContent.editor.name + "</strong> <br>" + healthyMenContent.editor.role + ", <em>" + healthyMenContent.editor.magazine + '</em></p></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyMenContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyMenContent.editor.name + "</strong> <br>" + healthyMenContent.editor.role + ", <em>" + healthyMenContent.editor.magazine + '</em></p></div><div class="hmlp-block-product"><a href="' + healthyMenContent.product.url + '" title="' + healthyMenContent.product.title + '"><img src="' + healthyMenContent.product.coverImage + '" class="hmlp-block-product__cover" title="Healthy For Men Magazine"></a><p class="hmlp-block-product__price">&pound;' + healthyMenContent.product.price + '</p><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyMenContent.product.sku + '" data-product-id="' + healthyMenContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyMenContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy For Men Magazine"></div>';
         healthyMenHtml += '<div class="hmlp-talking-about"><h3 class="hmlp-block__subtitle">' + talkingAboutTitle + '</h3><ul class="hmlp-talking-about-list">';
         healthyMenContent.talkingAboutBullets.forEach(function(el) {
             return healthyMenHtml += '<li class="hmlp-talking-about-list__item">' + el + "</li>";
