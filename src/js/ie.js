@@ -167,14 +167,14 @@
                 magazine: "Healthy For Men"
             },
             product: {
-                sku: '',
-                prodId: '',
-                title: '',
+                sku: '010314',
+                prodId: '60010314',
+                title: 'Healthy for Men Issue 85: Fitness Special',
                 price: 3.75,
-                url: '',
+                url: '/shop/product/healthy-for-men-issue-85-fitness-special-60010314?skuid=010314',
                 coverImage: '/__ssobj/static/hmlp-healthy-men-cover-111019.jpg',
                 mobileImage: '/__ssobj/static/hmlp-healthy-men-prod-111019.jpg'
-            },
+              },
             talkingAboutBullets: ['Being an ace Dad', 'Mastering your sex drive', 'Greener grooming', 'Handling hangovers', 'Tackling loneliness', 'Training with your tribe']
 
         };
@@ -197,8 +197,8 @@
             label: "Read your FREE sample of Healthy For Men here",
             ctaLabel: "Free Sample",
             modalContent: {
-                link: "https://www.healthyformen.com/wp-content/uploads/healthy_for_men-sep-oct-2019-sampler/",
-                scriptLink: "https://www.healthyformen.com/wp-content/uploads/healthy_for_men-sep-oct-2019-sampler/files/html/static/embed.js"
+                link: 'https://www.healthyformen.com/wp-content/uploads/samplers/healthy_for_men-nov-dec-2019-sampler/',
+                scriptLink: 'https://www.healthyformen.com/wp-content/uploads/samplers/healthy_for_men-nov-dec-2019-sampler/files/html/static/embed.js'
             }
         };
         var healthyMenSampleBannerHtml = '<div class="hmlp-sample-banner u-c" id="' + healthyMenSampleBannerContent.id + '"><div class="hmlp-sample-banner__body"><p>' + healthyMenSampleBannerContent.label + '</p><a href="#" class="hmlp-sample-banner__cta js-hmlp-sample-modal" alt="View Sample">' + healthyMenSampleBannerContent.ctaLabel + '</a></div><div class="hmlp-modal-wrap"><div class="hmlp-modal"><span class="hmlp-modal__close js-hmlp-modal-close"><i class="fas fa-times"></i></span><a class="fbp-embed" style="max-width: 100%" href="' + healthyMenSampleBannerContent.modalContent.link + '" data-fbp-lightbox="yes" data-fbp-version="1" data-fbp-width="620px" data-fbp-height="480px">Healthy</a></div></div></div>';

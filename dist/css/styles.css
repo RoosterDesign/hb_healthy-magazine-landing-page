@@ -38,22 +38,12 @@ body > div[role="main"] > div:nth-of-type(1) {
   text-align: center;
 }
 
-.hmlp-hero:before {
-  background: rgba(0, 0, 0, 0.5);
-  content: '';
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
 .hmlp-hero__content {
   position: relative;
 }
 
 .hmlp-hero__title, .hmlp-hero__body {
-  color: #fff;
+  color: #333;
   margin: 0;
 }
 
@@ -519,7 +509,7 @@ body > div[role="main"] > div:nth-of-type(1) {
     padding: 48px 24px;
   }
   .hmlp-hero {
-    background-image: url("/__ssobj/static/hero-111019.jpg");
+    background-image: url("/__ssobj/static/hero-111019-2.jpg");
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -532,11 +522,6 @@ body > div[role="main"] > div:nth-of-type(1) {
     padding: 0;
     text-align: left;
     height: 400px;
-  }
-  .hmlp-hero:before {
-    background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0)), color-stop(60%, rgba(0, 0, 0, 0.6)));
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.6) 60%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=1);
   }
   .hmlp-hero__content {
     padding: 0 40px;

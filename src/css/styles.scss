@@ -99,7 +99,7 @@ body>div[role="main"]>div:nth-of-type(1) {
     }
 
     @include mq(tablet) {
-        background-image: url('/__ssobj/static/hero-111019.jpg');
+        background-image: url('/__ssobj/static/hero-111019-2.jpg');
         align-items: center;
         justify-content: flex-end;
         display: flex;
@@ -108,22 +108,22 @@ body>div[role="main"]>div:nth-of-type(1) {
         height: 400px;
     }
 
-    &:before {
-        background: rgba(0, 0, 0, .5);
-        content: '';
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
+    // &:before {
+    //     background: rgba(0, 0, 0, .5);
+    //     content: '';
+    //     height: 100%;
+    //     left: 0;
+    //     position: absolute;
+    //     top: 0;
+    //     width: 100%;
 
-        @include mq(tablet) {
-            background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, .6) 60%);
-            background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, .6) 60%);
-            background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, .6) 60%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=1);
-        }
-    }
+    //     @include mq(tablet) {
+    //         background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, .6) 60%);
+    //         background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, .6) 60%);
+    //         background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, .6) 60%);
+    //         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=1);
+    //     }
+    // }
 
     &__content {
         position: relative;
@@ -140,7 +140,8 @@ body>div[role="main"]>div:nth-of-type(1) {
 
     &__title,
     &__body {
-        color: #fff;
+        // color: #fff;
+        color: #333;
         margin: 0;
     }
 
