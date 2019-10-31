@@ -95,7 +95,7 @@
     function initHealthy() {
         var healthyContent = {
             logo: "/__ssobj/static/hmlp-healthy-logo.png",
-            quote: "<p>Inside this issue, we\\’ve turned our attention to nutrition. As the weather turns colder, we turn to comfort food, but how important is food for our health? We discover what you should be eating to boost your immunity and how to make the most of autumnal produce to create nourishing meals.  <strong>We\\’re also excited to reveal the winners of this year\\’s Healthy awards.</strong></p>",
+            quote: "<p>This issue we bring a flavour of the party season and a sense of positivity. We explore how to find enjoyment and meaningfulness in a time that many of us find a little stressful and exhausting. Discover practical and emotional advice on how to ace this Christmas season, from delicious vegetarian and vegan eats, to why getting tipsy can be healthy.</p>",
             editor: {
                 id: "ellie-hughes",
                 name: "Ellie Hughes",
@@ -103,17 +103,17 @@
                 magazine: "Healthy"
             },
             product: {
-                sku: "010306",
-                prodId: "60010306",
-                title: "Healthy Magazine Issue 153: The Nutrition Issue",
+                sku: "010308",
+                prodId: "",
+                title: "",
                 price: 2.99,
-                url: "/shop/product/healthy-magazine-issue-153-the-nutrition-issue-60010306",
-                coverImage: "/__ssobj/static/hmlp-healthy-cover-oct-nov-19.jpg",
-                mobileImage: "/__ssobj/static/hmlp-healthy-prod-oct-nov-19-mobile.jpg"
+                url: "",
+                coverImage: "/__ssobj/static/hmlp-healthy-cover-021119.jpg",
+                mobileImage: "/__ssobj/static/hmlp-healthy-prod-021119-mobile.jpg"
             },
-            talkingAboutBullets: [ "Managing chronic pain", "Prebiotic supplements", "Fertility", "Organic beauty", "Kettlebell swings", "Mineral skincare" ]
+            talkingAboutBullets: [ "Cutting waste", "New year\\’s resolutions", "Having better sex", "Glowing, party ready skin", "Mastering mountain climbers", "Pilates" ]
         };
-        var healthyHtml = '<div class="hmlp-block" id="healthy"><div class="hmlp-block__intro"><img src="' + healthyContent.logo + '" class="hmlp-block__logo" title="Healthy Magazine"><i class="fas fa-quote-left hmlp-block__speech-mark"></i><blockquote class="hmlp-block__intro-quote">' + healthyContent.quote + '</blockquote><p class="hmlp-block__intro-editor"><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><img src="/__ssobj/static/hmlp-healthy-awards-2019.gif" class="hmlp-award-logo" /><div class="hmlp-block-product"><a href="' + healthyContent.product.url + '" title="' + healthyContent.product.title + '"><img src="' + healthyContent.product.coverImage + '" class="hmlp-block-product__cover" title="Healthy Magazine"></a><p class="hmlp-block-product__price">&pound;' + healthyContent.product.price + '</p><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy Magazine"></div>';
+        var healthyHtml = '<div class="hmlp-block" id="healthy"><div class="hmlp-block__intro"><img src="' + healthyContent.logo + '" class="hmlp-block__logo" title="Healthy Magazine"><i class="fas fa-quote-left hmlp-block__speech-mark"></i><blockquote class="hmlp-block__intro-quote">' + healthyContent.quote + '</blockquote><p class="hmlp-block__intro-editor"><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyContent.editor.id + '" class="hmlp-block-editor__photo"></div><p><strong>' + healthyContent.editor.name + "</strong> <br>" + healthyContent.editor.role + ", <em>" + healthyContent.editor.magazine + '</em></p></div><img src="/__ssobj/static/hmlp-2mags-special-021129-4.jpg" class="hmlp-roundel" /><div class="hmlp-block-product"><a href="' + healthyContent.product.url + '" title="' + healthyContent.product.title + '"><img src="' + healthyContent.product.coverImage + '" class="hmlp-block-product__cover hmlp-block-product__cover--no-shadow" title="Healthy Magazine"></a><p class="hmlp-block-product__price">&pound;' + healthyContent.product.price + '</p><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy Magazine"></div>';
         healthyHtml += '<div class="hmlp-talking-about"><h3 class="hmlp-block__subtitle">' + talkingAboutTitle + '</h3><ul class="hmlp-talking-about-list">';
         healthyContent.talkingAboutBullets.forEach(function(el) {
             return healthyHtml += '<li class="hmlp-talking-about-list__item">' + el + "</li>";
@@ -127,8 +127,8 @@
             label: "Read your FREE sample of Healthy here",
             ctaLabel: "Free Sample",
             modalContent: {
-                link: "https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-october-2019-sampler/",
-                scriptLink: "https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-october-2019-sampler/files/html/static/embed.js"
+                link: "https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-dec-jan-2019-hb/",
+                scriptLink: "https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-dec-jan-2019-hb/files/html/static/embed.js"
             }
         };
         var healthySampleBannerHtml = '<div class="hmlp-sample-banner u-c" id="' + healthySampleBannerContent.id + '"><div class="hmlp-sample-banner__body"><p>' + healthySampleBannerContent.label + '</p><a href="#" class="hmlp-sample-banner__cta js-hmlp-sample-modal" alt="View Sample">' + healthySampleBannerContent.ctaLabel + '</a></div><div class="hmlp-modal-wrap"><div class="hmlp-modal"><span class="hmlp-modal__close js-hmlp-modal-close"><i class="fas fa-times"></i></span><a class="fbp-embed" style="max-width: 100%" href="' + healthySampleBannerContent.modalContent.link + '" data-fbp-lightbox="yes" data-fbp-version="1" data-fbp-width="620px" data-fbp-height="480px">Healthy</a></div></div></div>';
@@ -177,7 +177,7 @@
                 scriptLink: "https://www.healthyformen.com/wp-content/uploads/samplers/healthy_for_men-nov-dec-2019-sampler/files/html/static/embed.js"
             }
         };
-        var healthyMenSampleBannerHtml = '<div class="hmlp-sample-banner u-c" id="' + healthyMenSampleBannerContent.id + '"><div class="hmlp-sample-banner__body"><p>' + healthyMenSampleBannerContent.label + '</p><a href="#" class="hmlp-sample-banner__cta js-hmlp-sample-modal" alt="View Sample">' + healthyMenSampleBannerContent.ctaLabel + '</a></div><div class="hmlp-modal-wrap"><div class="hmlp-modal"><span class="hmlp-modal__close js-hmlp-modal-close"><i class="fas fa-times"></i></span><a class="fbp-embed" style="max-width: 100%" href="' + healthyMenSampleBannerContent.modalContent.link + '" data-fbp-lightbox="yes" data-fbp-version="1" data-fbp-width="620px" data-fbp-height="480px">Healthy</a></div></div></div>';
+        var healthyMenSampleBannerHtml = '<div class="hmlp-sample-banner u-c hmlp-sample-banner--alt" id="' + healthyMenSampleBannerContent.id + '"><div class="hmlp-sample-banner__body"><p>' + healthyMenSampleBannerContent.label + '</p><a href="#" class="hmlp-sample-banner__cta js-hmlp-sample-modal" alt="View Sample">' + healthyMenSampleBannerContent.ctaLabel + '</a></div><div class="hmlp-modal-wrap"><div class="hmlp-modal"><span class="hmlp-modal__close js-hmlp-modal-close"><i class="fas fa-times"></i></span><a class="fbp-embed" style="max-width: 100%" href="' + healthyMenSampleBannerContent.modalContent.link + '" data-fbp-lightbox="yes" data-fbp-version="1" data-fbp-width="620px" data-fbp-height="480px">Healthy</a></div></div></div>';
         container.append(healthyMenSampleBannerHtml);
         var modalScriptTag = document.createElement("script");
         modalScriptTag.type = "text/javascript";
