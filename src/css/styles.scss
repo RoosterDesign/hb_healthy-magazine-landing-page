@@ -83,7 +83,7 @@ body>div[role="main"]>div:nth-of-type(1) {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .hmlp-hero {
-    background: url('/__ssobj/static/hero-mobile-021119-2.jpg') 50% 50%;
+    background: url('/__ssobj/static/hero-mobile-021119-3.jpg') 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -8px;
@@ -99,7 +99,7 @@ body>div[role="main"]>div:nth-of-type(1) {
     }
 
     @include mq(tablet) {
-        background-image: url('/__ssobj/static/hmlp-hero-021119-2.jpg');
+        background-image: url('/__ssobj/static/hmlp-hero-021119-4.jpg');
         align-items: center;
         //justify-content: flex-end;
         justify-content: flex-start;

@@ -125,10 +125,10 @@
       },
       product: {
         sku: '010308',
-        prodId: '',
-        title: '',
+        prodId: '60010308',
+        title: 'Healthy Magazine Issue 154: The Festive special',
         price: 2.99,
-        url: '',
+        url: '/shop/product/healthy-magazine-issue-154-the-festive-special-60010308?skuid=010308',
         coverImage: '/__ssobj/static/hmlp-healthy-cover-021119.jpg',
         mobileImage: '/__ssobj/static/hmlp-healthy-prod-021119-mobile.jpg'
       },

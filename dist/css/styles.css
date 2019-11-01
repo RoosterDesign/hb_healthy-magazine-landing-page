@@ -28,7 +28,7 @@ body > div[role="main"] > div:nth-of-type(1) {
 }
 
 .hmlp-hero {
-  background: url("/__ssobj/static/hero-mobile-021119-2.jpg") 50% 50%;
+  background: url("/__ssobj/static/hero-mobile-021119-3.jpg") 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: -8px;
@@ -515,7 +515,7 @@ body > div[role="main"] > div:nth-of-type(1) {
     padding: 48px 24px;
   }
   .hmlp-hero {
-    background-image: url("/__ssobj/static/hmlp-hero-021119-2.jpg");
+    background-image: url("/__ssobj/static/hmlp-hero-021119-4.jpg");
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
