@@ -160,21 +160,19 @@
       healthyContent.product.title +
       '"><img src="' +
       healthyContent.product.coverImage +
-      '" class="hmlp-block-product__cover hmlp-block-product__cover--no-shadow" title="Healthy Magazine"></a><p class="hmlp-block-product__price">&euro;' +
+      '" class="hmlp-block-product__cover" title="Healthy Magazine"></a><p class="hmlp-block-product__price">&euro;' +
       healthyContent.product.price +
       '</p><button class="hmlp-quick-add js-quickadd" data-sku="' +
       healthyContent.product.sku +
       '" data-product-id="' +
       healthyContent.product.prodId +
-      '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' +
-      healthyContent.product.mobileImage +
-      '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy Magazine"></div>';
+      '">Quick Add</button></div>';
 
     healthyHtml += '<div class="hmlp-talking-about"><h3 class="hmlp-block__subtitle">' + talkingAboutTitle + '</h3><ul class="hmlp-talking-about-list">';
     healthyContent.talkingAboutBullets.forEach(function(el) {
       return (healthyHtml += '<li class="hmlp-talking-about-list__item">' + el + '</li>');
     });
-    healthyHtml += '</ul></div><p class="hmlp-block-product__price hmlp-block-product__price--mobile">&euro;' + healthyContent.product.price + '</p><button class="hmlp-quick-add hmlp-quick-add--mobile js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div>';
+    healthyHtml += '</ul></div><a href="'+healthyContent.product.url+'" title="'+healthyContent.product.title+'" class="hmlp-block-product__cover-mobile"><img src="'+healthyContent.product.coverImage+'" class="hmlp-block-product__cover" title="Healthy Magazine"></a><p class="hmlp-block-product__price hmlp-block-product__price--mobile">&euro;' + healthyContent.product.price + '</p><button class="hmlp-quick-add hmlp-quick-add--mobile js-quickadd" data-sku="' + healthyContent.product.sku + '" data-product-id="' + healthyContent.product.prodId + '">Quick Add</button></div>';
     container.append(healthyHtml);
   }
 
@@ -253,9 +251,7 @@
       healthyMenContent.product.sku +
       '" data-product-id="' +
       healthyMenContent.product.prodId +
-      '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' +
-      healthyMenContent.product.mobileImage +
-      '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy For Men Magazine"></div>';
+      '">Quick Add</button></div>';
 
     // NO EDITOR PHOTO
     // var healthyMenHtml = '<div class="hmlp-block" id="healthy-for-men"><div class="hmlp-block__intro"><img src="' + healthyMenContent.logo + '" class="hmlp-block__logo" title="Healthy For Men Magazine"><i class="fas fa-quote-left hmlp-block__speech-mark"></i><blockquote class="hmlp-block__intro-quote">' + healthyMenContent.quote + '</blockquote></div><div class="hmlp-block-editor"><div id="hmlp-photo-' + healthyMenContent.editor.id + '" class="hmlp-block-editor__photo"></div></div><div class="hmlp-block-product"><a href="' + healthyMenContent.product.url + '" title="' + healthyMenContent.product.title + '"><img src="' + healthyMenContent.product.coverImage + '" class="hmlp-block-product__cover" title="Healthy For Men Magazine"></a><p class="hmlp-block-product__price">&euro;' + healthyMenContent.product.price + '</p><button class="hmlp-quick-add js-quickadd" data-sku="' + healthyMenContent.product.sku + '" data-product-id="' + healthyMenContent.product.prodId + '">Quick Add</button></div><div class="hmlp-product-img-wrap"><img src="' + healthyMenContent.product.mobileImage + '" class="hmlp-product-img hmlp-product-img--mobile" title="Healthy For Men Magazine"></div>';
@@ -264,7 +260,7 @@
     healthyMenContent.talkingAboutBullets.forEach(function(el) {
       return (healthyMenHtml += '<li class="hmlp-talking-about-list__item">' + el + '</li>');
     });
-    healthyMenHtml += '</ul></div><p class="hmlp-block-product__price hmlp-block-product__price--mobile">&euro;' + healthyMenContent.product.price + '</p><button class="hmlp-quick-add hmlp-quick-add--mobile js-quickadd" data-sku="' + healthyMenContent.product.sku + '" data-product-id="' + healthyMenContent.product.prodId + '">Quick Add</button></div>';
+    healthyMenHtml += '</ul></div><a href="'+healthyMenContent.product.url+'" title="'+healthyMenContent.product.title+'" class="hmlp-block-product__cover-mobile"><img src="'+healthyMenContent.product.coverImage+'" class="hmlp-block-product__cover" title="Healthy Magazine"></a><p class="hmlp-block-product__price hmlp-block-product__price--mobile">&euro;' + healthyMenContent.product.price + '</p><button class="hmlp-quick-add hmlp-quick-add--mobile js-quickadd" data-sku="' + healthyMenContent.product.sku + '" data-product-id="' + healthyMenContent.product.prodId + '">Quick Add</button></div>';
     container.append(healthyMenHtml);
   }
   function initHealthyMenSampleBanner() {

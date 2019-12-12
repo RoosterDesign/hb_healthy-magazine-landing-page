@@ -577,7 +577,12 @@ body.hmlp-sticky-nav--fixed {
 
     &__cover--no-shadow {
         box-shadow: none;
-        ;
+    }
+
+    &__cover-mobile {
+        @include mq(tablet) {
+            display: none;
+        }
     }
 
     &__price {
@@ -722,7 +727,7 @@ body.hmlp-sticky-nav--fixed {
 
 .hmlp-talking-about-list {
     font-size: 0;
-    margin: 0 0 16px 0;
+    margin: 0 0 24px 0;
     padding: 0;
 
     @include mq(tablet) {
