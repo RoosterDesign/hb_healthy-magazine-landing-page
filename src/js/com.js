@@ -54,7 +54,7 @@
   function initHero() {
     var heroContent = {
       title: 'Expert health, wellbeing & fitness advice at your fingertips',
-      body: 'Discover the latest health and wellness research and our guides to living healthier.'
+      body: 'Make 2020 your healthiest year yet.'
     };
     var heroHtml = '<div class="hmlp-hero"><div class="hmlp-hero__content"><h1 class="hmlp-hero__title">' + heroContent.title + '</h1><p class="hmlp-hero__body">' + heroContent.body + '</p></div></div>';
     container.append(heroHtml);
@@ -116,7 +116,7 @@
   function initHealthy() {
     var healthyContent = {
       logo: '/__ssobj/static/hmlp-healthy-logo.png',
-      quote: '<p>This issue we bring a flavour of the party season and a sense of positivity. We explore how to find enjoyment and meaningfulness in a time that many of us find a little stressful and exhausting. Discover practical and emotional advice on how to ace this Christmas season, from delicious vegetarian and vegan eats, to why getting tipsy can be healthy.</p>',
+      quote: "<p>Hello 2020! Whatever your take on New Year resolutions, the idea of a whole fresh decade to do things differently in has undeniable appeal. If there\\'s one thing pretty much all the experts agree on, it\\'s that small changes have a bigger chance of succeeding than wholesale life swerves. Hence our theme this issue – little life upgrades, whether that\\'s in your approach to what you eat or even new technologies to make your brain efficient. Grab a copy today.</p>",
       editor: {
         id: 'ellie-hughes',
         name: 'Ellie Hughes',
@@ -129,10 +129,10 @@
         title: 'Healthy Magazine Issue 154: The Festive special',
         price: 2.99,
         url: '/shop/product/healthy-magazine-issue-154-the-festive-special-60010308?skuid=010308',
-        coverImage: '/__ssobj/static/hmlp-healthy-cover-021119.jpg',
-        mobileImage: '/__ssobj/static/hmlp-healthy-prod-021119-mobile.jpg'
+        coverImage: '/__ssobj/static/hmlp-healthy-cover-131219.jpg',
+        mobileImage: '/__ssobj/static/hmlp-healthy-prod-131219-mobile.jpg'
       },
-      talkingAboutBullets: ['Cutting waste', 'New year\\’s resolutions', 'Having better sex', 'Glowing, party ready skin', 'Mastering mountain climbers', 'Pilates']
+      talkingAboutBullets: ['Anxiety hacks','Clean beauty','Safe sex','Dry(ish) January','Nordic cuddle therapy','Vegan recipes']
     };
 
     var healthyHtml =
@@ -154,7 +154,7 @@
       healthyContent.editor.role +
       ', <em>' +
       healthyContent.editor.magazine +
-      '</em></p></div><img src="/__ssobj/static/hmlp-2mags-special-021129-4.jpg" class="hmlp-roundel" /><div class="hmlp-block-product"><a href="' +
+      '</em></p></div><div class="hmlp-block-product"><a href="' +
       healthyContent.product.url +
       '" title="' +
       healthyContent.product.title +
@@ -184,8 +184,8 @@
       label: 'Read your FREE sample of Healthy here',
       ctaLabel: 'Free Sample',
       modalContent: {
-        link: 'https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-dec-jan-2019-hb/',
-        scriptLink: 'https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-dec-jan-2019-hb/files/html/static/embed.js'
+        link: 'https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-feb-2020-sampler/',
+        scriptLink: 'https://www.healthy-magazine.co.uk/wp-content/uploads/healthy-feb-2020-sampler/files/html/static/embed.js'
       }
     };
     var healthySampleBannerHtml = '<div class="hmlp-sample-banner u-c" id="' + healthySampleBannerContent.id + '"><div class="hmlp-sample-banner__body"><p>' + healthySampleBannerContent.label + '</p><a href="#" class="hmlp-sample-banner__cta js-hmlp-sample-modal" alt="View Sample">' + healthySampleBannerContent.ctaLabel + '</a></div><div class="hmlp-modal-wrap"><div class="hmlp-modal"><span class="hmlp-modal__close js-hmlp-modal-close"><i class="fas fa-times"></i></span><a class="fbp-embed" style="max-width: 100%" href="' + healthySampleBannerContent.modalContent.link + '" data-fbp-lightbox="yes" data-fbp-version="1" data-fbp-width="620px" data-fbp-height="480px">Healthy</a></div></div></div>';
@@ -203,7 +203,7 @@
   function initHealthyMen() {
     var healthyMenContent = {
       logo: '/__ssobj/static/hmlp-healthy-men-logo.png',
-      quote: '<p>We get the scoop on how Michael B Jordan trains like a champion for his film roles including, Creed, Black Panther and the new film, Just Mercy. Whether you\\’re looking to build strength or, to look and feel better, this issue has got all the tips and advice you need whether you\\’re 25 or 55. Discover how to strengthen your winter defences with our guide on how your nutrition can boost immunity.</p><p>PLUS, Save with exclusive vouchers inside including half price Grenade Killa Ketones and Optimum Nutrition BCAA powder.</p>',
+      quote: '<p>Hello to cover star Daniel Craig and his final time as 007. Discover how the 51-year-old is fitter and healthier now than he was in his 20s and 30s, and his nutritional plan. Elsewhere, uncover why male fertility is under threat, how plants can provide strength and power this January and a fat burning workout from Love Islands Anton to kick start your year. PLUS, every issue comes with 4 goodies to help fuel your next session – get your copy now.</p>',
       editor: {
         id: 'tom-rowley',
         name: 'Tom Rowley',
@@ -216,10 +216,10 @@
         title: 'Healthy for Men Issue 85: Fitness Special',
         price: 2.49,
         url: '/shop/product/healthy-for-men-issue-85-fitness-special-60010314?skuid=010314',
-        coverImage: '/__ssobj/static/hmlp-healthy-men-cover-111019.jpg',
-        mobileImage: '/__ssobj/static/hmlp-healthy-men-prod-111019.jpg'
+        coverImage: '/__ssobj/static/hmlp-healthy-men-cover-131219.jpg',
+        mobileImage: '/__ssobj/static/hmlp-healthy-men-prod-131219.jpg'
       },
-      talkingAboutBullets: ['Being an ace Dad', 'Mastering your sex drive', 'Greener grooming', 'Handling hangovers', 'Tackling loneliness', 'Training with your tribe']
+      talkingAboutBullets: ['Amir Khan','Tech-free workouts','Winter fitness','Sweeteners','Dirty vegan recipes','Body dysmorphia']
     };
 
     var healthyMenHtml =
@@ -280,8 +280,8 @@
       label: 'Read your FREE sample of Healthy For Men here',
       ctaLabel: 'Free Sample',
       modalContent: {
-        link: 'https://www.healthyformen.com/wp-content/uploads/samplers/healthy_for_men-nov-dec-2019-sampler/',
-        scriptLink: 'https://www.healthyformen.com/wp-content/uploads/samplers/healthy_for_men-nov-dec-2019-sampler/files/html/static/embed.js'
+        link: 'https://www.healthyformen.com/wp-content/uploads/healthy_for_men-jan-feb-2020-sampler/',
+        scriptLink: 'https://www.healthyformen.com/wp-content/uploads/healthy_for_men-jan-feb-2020-sampler/files/html/static/embed.js'
       }
     };
     var healthyMenSampleBannerHtml = '<div class="hmlp-sample-banner u-c hmlp-sample-banner--alt" id="' + healthyMenSampleBannerContent.id + '"><div class="hmlp-sample-banner__body"><p>' + healthyMenSampleBannerContent.label + '</p><a href="#" class="hmlp-sample-banner__cta js-hmlp-sample-modal" alt="View Sample">' + healthyMenSampleBannerContent.ctaLabel + '</a></div><div class="hmlp-modal-wrap"><div class="hmlp-modal"><span class="hmlp-modal__close js-hmlp-modal-close"><i class="fas fa-times"></i></span><a class="fbp-embed" style="max-width: 100%" href="' + healthyMenSampleBannerContent.modalContent.link + '" data-fbp-lightbox="yes" data-fbp-version="1" data-fbp-width="620px" data-fbp-height="480px">Healthy</a></div></div></div>';

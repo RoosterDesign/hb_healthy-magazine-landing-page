@@ -83,7 +83,7 @@ body>div[role="main"]>div:nth-of-type(1) {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .hmlp-hero {
-    background: url('/__ssobj/static/hero-mobile-021119-3.jpg') 50% 50%;
+    background: url('/__ssobj/static/hero-mobile-131219.jpg') 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -8px;
@@ -99,10 +99,10 @@ body>div[role="main"]>div:nth-of-type(1) {
     }
 
     @include mq(tablet) {
-        background-image: url('/__ssobj/static/hmlp-hero-021119-4.jpg');
+        background-image: url('/__ssobj/static/hmlp-hero-131219.jpg');
         align-items: center;
-        //justify-content: flex-end;
-        justify-content: flex-start;
+        justify-content: flex-end;
+        // justify-content: flex-start;
         display: flex;
         padding: 0;
         text-align: left;
@@ -144,9 +144,9 @@ body>div[role="main"]>div:nth-of-type(1) {
         color: #fff;
         margin: 0;
 
-        @include mq(tablet) {
-            color: #333;
-        }
+        // @include mq(tablet) {
+        //     color: #333;
+        // }
     }
 
     &__title {
@@ -521,8 +521,8 @@ body.hmlp-sticky-nav--fixed {
     background-image: url('/__ssobj/static/hmlp-ellie-hughes-mobile.jpg');
 
     @include mq(tablet) {
-        // background-image: url('/__ssobj/static/hmlp-ellie-hughes.jpg');
-        background-image: url('/__ssobj/static/hmlp-2mags-special-021129-4.jpg');
+        background-image: url('/__ssobj/static/hmlp-ellie-hughes.jpg');
+        // background-image: url('/__ssobj/static/hmlp-2mags-special-021129-4.jpg');
     }
 }
 
@@ -539,11 +539,9 @@ body.hmlp-sticky-nav--fixed {
 }
 
 #hmlp-photo-tom-rowley {
-    display: none;
     background-image: url('/__ssobj/static/hmlp-tom-rowley-mobile.jpg');
 
     @include mq(tablet) {
-        display: block;
         background-image: url('/__ssobj/static/hmlp-tom-rowley.jpg');
         // background-image: url('/__ssobj/static/hmlp-men-free-goodies.png');
     }
@@ -862,25 +860,27 @@ body.hmlp-sticky-nav--fixed {
 .hmlp-sample-banner--alt {
 
     .hmlp-sample-banner__body {
-        float: right;
+        @include mq(tablet) {
+            float: right;
+        }
     }
 
 }
 
 #hmlp-healthy-banner {
-    background-image: url('/__ssobj/static/hmlp-healthy-banner-mobile-021119.jpg');
+    background-image: url('/__ssobj/static/hmlp-healthy-banner-mobile-131219.jpg');
 
     @include mq(tablet) {
-        background-image: url('/__ssobj/static/hmlp-healthy-banner-021119.jpg');
+        background-image: url('/__ssobj/static/hmlp-healthy-banner-131219.jpg');
     }
 
 }
 
 #hmlp-healthy-for-men-banner {
-    background-image: url('/__ssobj/static/hmlp-men-banner-mobile-111019.jpg');
+    background-image: url('/__ssobj/static/hmlp-men-banner-mobile-131219.jpg');
 
     @include mq(tablet) {
-        background-image: url('/__ssobj/static/hmlp-men-banner-111019.jpg');
+        background-image: url('/__ssobj/static/hmlp-men-banner-131219.jpg');
     }
 
 }
