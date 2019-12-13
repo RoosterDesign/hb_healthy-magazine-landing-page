@@ -124,11 +124,11 @@
         magazine: 'Healthy'
       },
       product: {
-        sku: '010308',
-        prodId: '60010308',
-        title: 'Healthy Magazine Issue 154: The Festive special',
-        price: 2.99,
-        url: '/shop/product/healthy-magazine-issue-154-the-festive-special-60010308?skuid=010308',
+        sku: '038031',
+        prodId: '60038031',
+        title: 'Healthy Magazine Issue 155: Fitness Issue',
+        price: 4.45,
+        url: '/shop/product/healthy-magazine-issue-155-fitness-issue-60038031',
         coverImage: '/__ssobj/static/hmlp-healthy-cover-131219.jpg',
         mobileImage: '/__ssobj/static/hmlp-healthy-prod-131219-mobile.jpg'
       },
@@ -209,11 +209,11 @@
         magazine: 'Healthy For Men'
       },
       product: {
-        sku: '010314',
-        prodId: '60010314',
-        title: 'Healthy for Men Issue 85: Fitness Special',
-        price: 2.49,
-        url: '/shop/product/healthy-for-men-issue-85-fitness-special-60010314?skuid=010314',
+        sku: '038032',
+        prodId: '60038032',
+        title: 'Healthy for Men Issue 86: Health Upgrades',
+        price: 3.75,
+        url: '/shop/product/healthy-for-men-issue-86-health-upgrades-60038032',
         coverImage: '/__ssobj/static/hmlp-healthy-men-cover-131219.jpg',
         mobileImage: '/__ssobj/static/hmlp-healthy-men-prod-131219.jpg'
       },
